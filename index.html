@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>해윤제 명인전통마사지 · 인수 런칭 제안</title>
+<meta name="description" content="황실에서 해윤제로. 간판은 바뀌었는데, 검색 속 이름은 누군가 새로 세워야 합니다. 첫 90일을 위한 온라인 런칭 제안." />
+<meta name="theme-color" content="#0E0C0A" />
+<meta property="og:title" content="해윤제 명인전통마사지 · 인수 런칭 제안" />
+<meta property="og:description" content="그 자리를, 새 이름으로." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700;900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+<style>
+  :root{
+    --bg-base:#0E0C0A; --bg-surface:#17140F; --bg-elevated:#1F1B14; --bg-deep:#08070A;
+    --text-primary:#F5EFE6; --text-secondary:#A89E8C; --text-muted:#6B6253;
+    --accent:#C8A876; --accent-soft:#8B7355; --accent-deep:#5C4A33;
+    --divider:#2A251D; --divider-soft:#1A160F; --warning:#C97B5C;
+    --font-display:'Noto Serif KR','Pretendard',serif;
+    --font-body:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;
+    --font-accent:'EB Garamond','Noto Serif KR',serif;
+    --gutter-left:24px; --void-right:56px; --content-max:560px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg-base); color:var(--text-primary); font-family:var(--font-body);
+    font-size:16px; line-height:1.75; letter-spacing:-0.01em; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden; padding-bottom:76px;
+  }
+  body::before{
+    content:''; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.025;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  a{color:inherit;text-decoration:none;}
+  .keep-all{word-break:keep-all;overflow-wrap:break-word;}
+
+  /* 좌측 정박 · 우측 여백 */
+  .col{
+    position:relative; z-index:1;
+    width:min(var(--content-max), calc(100% - var(--gutter-left) - var(--void-right)));
+    margin-left:var(--gutter-left);
+  }
+  @media(min-width:760px){
+    :root{ --gutter-left:72px; --void-right:46vw; }
+  }
+
+  section{ padding:92px 0; position:relative; }
+  section.tight{ padding:64px 0; }
+
+  .label{
+    font-family:var(--font-accent); font-style:italic; font-size:14px; letter-spacing:.04em;
+    color:var(--accent-soft); margin-bottom:22px; display:block;
+  }
+  h1,h2{ font-family:var(--font-display); font-weight:700; line-height:1.3; letter-spacing:-0.02em; color:var(--text-primary); }
+  h1{ font-size:clamp(30px,8.6vw,46px); font-weight:900; }
+  h2{ font-size:clamp(24px,6.6vw,32px); }
+  h2 .a, h1 .a{ color:var(--accent); }
+  p{ color:var(--text-secondary); font-size:16px; margin-top:16px; }
+  p.tp{ color:var(--text-primary); }
+  .sm{ font-size:14px; color:var(--text-muted); }
+  .divider{ height:1px; background:var(--divider); border:0; margin:28px 0; width:64px; }
+
+  /* reveal */
+  .rv{ opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s ease; }
+  .rv.in{ opacity:1; transform:none; }
+  .rv-1{transition-delay:.08s}.rv-2{transition-delay:.18s}.rv-3{transition-delay:.28s}
+
+  /* ===== Hero ===== */
+  .hero{ min-height:96vh; display:flex; align-items:flex-end; overflow:hidden; padding:0; }
+  .hero::after{
+    content:''; position:absolute; inset:0; z-index:0;
+    background:
+      linear-gradient(180deg, rgba(14,12,10,.42) 0%, rgba(14,12,10,.6) 46%, rgba(14,12,10,.97) 100%),
+      url('haeyunje-hero-room.jpg') center/cover no-repeat,
+      var(--bg-base);
+  }
+  .hero .col{ z-index:1; padding-bottom:72px; padding-top:120px; }
+  .hero .eyebrow{ font-family:var(--font-accent); font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin-bottom:26px; display:block; }
+  .hero h1{ color:var(--text-primary); }
+  .hero .pin{ font-family:var(--font-accent); font-style:italic; font-size:18px; color:var(--accent); margin-top:22px; }
+  .hero .cue{ margin-top:40px; font-size:13px; color:var(--text-muted); letter-spacing:.1em; }
+
+  /* ===== scene (atmospheric full-bleed) ===== */
+  .scene{ min-height:72vh; display:flex; align-items:flex-end; overflow:hidden; }
+  .scene::after{
+    content:''; position:absolute; inset:0; z-index:0;
+    background:
+      linear-gradient(180deg, rgba(14,12,10,.3) 0%, rgba(14,12,10,.55) 50%, rgba(14,12,10,.96) 100%),
+      var(--scene) center/cover no-repeat, var(--bg-base);
+  }
+  .scene .col{ z-index:1; padding-bottom:64px; }
+  .scene h2{ color:var(--text-primary); }
+
+  /* before → after (세로) */
+  .ba{ margin-top:28px; }
+  .ba .row{ padding:18px 0; border-bottom:1px solid var(--divider); }
+  .ba .row:last-child{ border-bottom:0; }
+  .ba .rl{ font-family:var(--font-accent); font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--text-muted); }
+  .ba .rn{ font-family:var(--font-display); font-size:22px; font-weight:700; margin-top:4px; }
+  .ba .rn.now{ color:var(--accent); }
+
+  /* fact list */
+  .facts{ margin-top:26px; }
+  .facts li{ list-style:none; padding:14px 0; border-bottom:1px solid var(--divider-soft); }
+  .facts li:last-child{ border-bottom:0; }
+  .facts b{ color:var(--text-primary); font-weight:700; }
+  .facts span{ color:var(--text-secondary); }
+
+  /* loss line */
+  .loss{ font-family:var(--font-display); font-size:clamp(22px,6vw,28px); font-weight:700; line-height:1.45; color:var(--text-primary); }
+  .loss .a{ color:var(--warning); }
+
+  /* ===== 분기 탭 ===== */
+  .tabs{ display:flex; flex-wrap:wrap; gap:8px; margin-top:26px; }
+  .tab{
+    font-family:var(--font-body); font-size:14px; color:var(--text-secondary); cursor:pointer;
+    background:transparent; border:1px solid var(--divider); border-radius:999px; padding:11px 16px; min-height:44px;
+    transition:.18s ease;
+  }
+  .tab[aria-selected="true"]{ color:var(--bg-base); background:var(--accent); border-color:var(--accent); font-weight:600; }
+  .tab:hover{ border-color:var(--accent-soft); }
+  .tab-body{ margin-top:22px; min-height:96px; }
+  .tab-panel{ display:none; }
+  .tab-panel.on{ display:block; animation:fade .5s ease; }
+  @keyframes fade{ from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:none} }
+  .tab-panel .q{ font-family:var(--font-display); font-size:19px; font-weight:700; color:var(--text-primary); }
+  .tab-panel p{ margin-top:10px; }
+
+  /* flow (세로) */
+  .flow{ margin-top:26px; }
+  .flow .step{ padding:16px 0; border-bottom:1px solid var(--divider-soft); position:relative; padding-left:78px; }
+  .flow .step:last-child{ border-bottom:0; }
+  .flow .step .n{ position:absolute; left:0; top:16px; font-family:var(--font-accent); font-style:italic; font-size:13px; color:var(--accent); letter-spacing:.06em; }
+  .flow .step h3{ font-family:var(--font-display); font-size:18px; font-weight:700; }
+  .flow .step p{ margin-top:4px; font-size:14px; }
+
+  /* role (세로) */
+  .roles{ margin-top:8px; }
+  .role{ padding:24px 0; border-bottom:1px solid var(--divider); }
+  .role:last-child{ border-bottom:0; }
+  .role .rt{ font-family:var(--font-accent); font-style:italic; font-size:13px; color:var(--accent); }
+  .role h3{ font-family:var(--font-display); font-size:20px; font-weight:700; margin-top:6px; }
+  .role ul{ margin-top:12px; }
+  .role li{ list-style:none; padding-left:16px; position:relative; margin:7px 0; color:var(--text-secondary); font-size:15px; }
+  .role li::before{ content:''; position:absolute; left:0; top:13px; width:7px; height:1px; background:var(--accent-soft); }
+
+  /* isolation (Von Restorff) */
+  .isolate{ min-height:74vh; display:flex; flex-direction:column; justify-content:center; }
+  .isolate .word{ font-family:var(--font-display); font-weight:900; font-size:clamp(64px,26vw,150px); line-height:1; color:var(--accent); letter-spacing:-.04em; }
+  .isolate .cap{ font-family:var(--font-accent); font-style:italic; font-size:16px; color:var(--text-secondary); margin-top:28px; max-width:300px; }
+
+  /* capture bait (공유 미끼) */
+  .capture{ }
+  .capture .frame{
+    border-left:2px solid var(--accent); padding:8px 0 8px 22px; margin-top:8px;
+  }
+  .capture blockquote{ font-family:var(--font-display); font-weight:700; font-size:clamp(22px,6vw,28px); line-height:1.5; color:var(--text-primary); }
+
+  /* roadmap (세로) */
+  .road{ margin-top:18px; }
+  .road .ph{ padding:24px 0; border-bottom:1px solid var(--divider); }
+  .road .ph:last-child{ border-bottom:0; }
+  .road .pt{ font-family:var(--font-accent); font-style:italic; font-size:14px; color:var(--accent); letter-spacing:.04em; }
+  .road .ph h3{ font-family:var(--font-display); font-size:19px; font-weight:700; margin-top:6px; }
+  .road .ph ul{ margin-top:12px; }
+  .road .ph li{ list-style:none; padding-left:16px; position:relative; margin:6px 0; font-size:14.5px; color:var(--text-secondary); }
+  .road .ph li::before{ content:''; position:absolute; left:0; top:12px; width:7px; height:1px; background:var(--accent-soft); }
+  .road .res{ margin-top:12px; font-family:var(--font-accent); font-style:italic; font-size:14.5px; color:var(--text-primary); }
+
+  /* pricing (PEAK · 세로) */
+  .price{ margin-top:24px; }
+  .price .p{ padding:26px 0; border-bottom:1px solid var(--divider); position:relative; }
+  .price .p:last-child{ border-bottom:0; }
+  .price .p.reco{ border-left:2px solid var(--accent); padding-left:22px; }
+  .price .pin-w{ font-family:var(--font-accent); font-style:italic; font-size:13px; color:var(--accent); }
+  .price .pl{ font-family:var(--font-accent); font-size:13px; letter-spacing:.04em; color:var(--text-muted); margin-top:4px; }
+  .price .pn{ font-family:var(--font-display); font-size:21px; font-weight:700; margin-top:6px; }
+  .price .pa{ font-family:var(--font-display); font-size:clamp(34px,11vw,46px); font-weight:900; margin-top:10px; letter-spacing:-.03em; }
+  .price .pa.big{ color:var(--accent); }
+  .price .pa small{ font-family:var(--font-body); font-size:14px; font-weight:400; color:var(--text-muted); letter-spacing:0; }
+  .price ul{ margin-top:14px; }
+  .price li{ list-style:none; padding-left:16px; position:relative; margin:6px 0; font-size:14.5px; color:var(--text-secondary); }
+  .price li::before{ content:''; position:absolute; left:0; top:12px; width:7px; height:1px; background:var(--accent-soft); }
+  .price .pos{ margin-top:12px; font-size:13px; color:var(--text-muted); }
+
+  /* payment (세로) */
+  .pay{ margin-top:24px; }
+  .pay .opt{ padding:20px 0; border-bottom:1px solid var(--divider); }
+  .pay .opt:last-child{ border-bottom:0; }
+  .pay .ot{ font-family:var(--font-accent); font-style:italic; font-size:14px; color:var(--accent); }
+  .pay .ov{ font-family:var(--font-display); font-size:28px; font-weight:900; margin-top:6px; }
+  .pay .od{ font-size:13.5px; color:var(--text-secondary); margin-top:4px; }
+  .pay .save{ margin-top:22px; font-family:var(--font-display); font-size:20px; font-weight:700; color:var(--text-primary); line-height:1.5; }
+  .pay .save .a{ color:var(--accent); }
+
+  /* scope */
+  .scope{ margin-top:22px; }
+  .scope .blk{ padding:16px 0; border-bottom:1px solid var(--divider-soft); }
+  .scope .blk:last-child{ border-bottom:0; }
+  .scope .st{ font-family:var(--font-accent); font-style:italic; font-size:13px; color:var(--accent); }
+  .scope .blk p{ margin-top:6px; font-size:14px; }
+  .scope .blk.ex .st{ color:var(--text-muted); }
+
+  /* faq */
+  .faq{ margin-top:22px; }
+  .faq details{ border-bottom:1px solid var(--divider); }
+  .faq summary{ list-style:none; cursor:pointer; padding:18px 30px 18px 0; position:relative; font-family:var(--font-display); font-size:16.5px; font-weight:700; color:var(--text-primary); line-height:1.5; }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq summary::after{ content:'+'; position:absolute; right:2px; top:16px; font-size:20px; color:var(--accent); font-weight:300; transition:transform .2s; }
+  .faq details[open] summary::after{ transform:rotate(45deg); }
+  .faq .a{ padding:0 0 18px; font-size:14.5px; color:var(--text-secondary); line-height:1.7; }
+
+  /* contact (shortest) */
+  .contact{ padding:96px 0 84px; }
+  .contact h2{ font-size:clamp(26px,7.4vw,36px); }
+  .contact .lead{ color:var(--text-secondary); margin-top:18px; font-size:16px; }
+  .contact .pin{ font-family:var(--font-accent); font-style:italic; font-size:18px; color:var(--accent); margin-top:40px; }
+  .contact .note{ margin-top:14px; font-size:12.5px; color:var(--text-muted); }
+
+  .foot{ padding:30px 0 40px; font-family:var(--font-accent); font-size:11px; letter-spacing:.08em; color:var(--text-muted); }
+  .foot .col{ }
+
+  /* sticky (Fitts · 엄지 구역 · 1경로) */
+  .sticky{ position:fixed; left:0; right:0; bottom:0; z-index:40; background:linear-gradient(180deg,rgba(14,12,10,0),rgba(14,12,10,.92) 38%); padding:18px 0 calc(16px + env(safe-area-inset-bottom)); }
+  .sticky .col{ margin-left:var(--gutter-left); }
+  .sticky a{
+    display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:13px 26px;
+    background:var(--accent); color:var(--bg-base); border-radius:999px; font-weight:600; font-size:15px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO (존1 · Hook · 미완결) ===== -->
+<section class="hero">
+  <div class="col">
+    <span class="eyebrow">Weplace × 해윤제</span>
+    <h1 class="keep-all">황실에서 해윤제로.<br>간판은 바뀌었는데,</h1>
+    <div class="pin keep-all">그 자리를, 새 이름으로.</div>
+    <div class="cue">아래로 ↓</div>
+  </div>
+</section>
+
+<!-- ===== 보상 + 손실 (존2 · Zeigarnik 해소 · Loss aversion) ===== -->
+<section>
+  <div class="col">
+    <span class="label rv">Now</span>
+    <h2 class="rv rv-1 keep-all">검색은,<br>아직 황실입니다.</h2>
+    <p class="rv rv-2 keep-all">새 단장으로 곧 문을 엽니다. 하지만 지금 '해윤제'로 찾으면—</p>
+    <p class="loss rv rv-3 keep-all" style="margin-top:22px;">그 <span class="a">자리</span>가 비어 있습니다.</p>
+    <hr class="divider rv">
+    <p class="sm rv keep-all">위치도, 손길도, 후기 174건도 이어집니다. 비어 있는 건 단 하나, 새 이름이 검색에 자리 잡는 일.</p>
+  </div>
+</section>
+
+<!-- ===== 전환 사실 (존2) ===== -->
+<section class="tight">
+  <div class="col">
+    <span class="label rv">Transition</span>
+    <h2 class="rv rv-1 keep-all">한 번에,<br>다섯이 바뀝니다.</h2>
+    <div class="ba rv rv-2">
+      <div class="row"><div class="rl">Before</div><div class="rn keep-all">황실전통마사지 동탄점</div></div>
+      <div class="row"><div class="rl">After</div><div class="rn now keep-all">해윤제 명인전통마사지</div></div>
+    </div>
+    <ul class="facts rv rv-3">
+      <li class="keep-all"><b>신규 대표 인수</b> <span>· 운영 주체가 바뀝니다.</span></li>
+      <li class="keep-all"><b>사업자 전환</b> <span>· 사업자 정보가 새로 등록됩니다.</span></li>
+      <li class="keep-all"><b>상호 변경</b> <span>· 검색·간판·안내에 '해윤제'가 반영됩니다.</span></li>
+      <li class="keep-all"><b>인테리어 리뉴얼</b> <span>· 공간이 새로 단장됩니다.</span></li>
+      <li class="keep-all"><b>이어받는 자산</b> <span>· 위치·후기 174는 잇고, 기준은 해윤제로.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== SCENE 입구 ===== -->
+<section class="scene" style="--scene:url('haeyunje-entrance.jpg');">
+  <div class="col">
+    <span class="label rv">Scene</span>
+    <h2 class="rv rv-1 keep-all">고객은 예약 전에,<br>이미 마음으로 한 번 들어와 봅니다.</h2>
+  </div>
+</section>
+
+<!-- ===== 분기 탭 (존2 · Identification Split) ===== -->
+<section>
+  <div class="col">
+    <span class="label rv">For You</span>
+    <h2 class="rv rv-1 keep-all">오픈 전, 가장<br>마음에 걸리는 건?</h2>
+    <p class="rv rv-2 keep-all">하나 골라 보세요. 새 이름을 본 고객도, 머릿속에서 같은 걸 먼저 확인합니다.</p>
+    <div class="tabs rv rv-3" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-t="0">같은 곳인가</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="1">믿어도 되나</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="2">가격은</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="3">예약은</button>
+    </div>
+    <div class="tab-body rv">
+      <div class="tab-panel on" data-p="0">
+        <div class="q keep-all">"여기, 그 자리 맞아?"</div>
+        <p class="keep-all">옛 이름으로 찾으면 나오고, 새 이름엔 비어 있습니다. 같은 자리에서 새 대표·새 기준으로 다시 열었다는 신호부터 심습니다.</p>
+      </div>
+      <div class="tab-panel" data-p="1">
+        <div class="q keep-all">"지금 운영하나, 믿어도 되나?"</div>
+        <p class="keep-all">영업 중이라는 최신 신호와 이어받은 후기 174건이, 해윤제 이름 아래에서도 살아 있게 잇습니다.</p>
+      </div>
+      <div class="tab-panel" data-p="2">
+        <div class="q keep-all">"가격은 어떻게 돼?"</div>
+        <p class="keep-all">코스·시간·금액이 한 화면에 정리돼 있어야 합니다. 흩어진 안내를 한 자리로 모읍니다.</p>
+      </div>
+      <div class="tab-panel" data-p="3">
+        <div class="q keep-all">"예약은 어디서 해?"</div>
+        <p class="keep-all">어느 채널에서 봐도 예약까지 한 줄로 이어지는 흐름을 설계합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 출발점 → 흐름 (존3) ===== -->
+<section>
+  <div class="col">
+    <span class="label rv">Flow</span>
+    <h2 class="rv rv-1 keep-all">네이버·릴스는 출발점.<br>그 위에 자리를 잇습니다.</h2>
+    <p class="rv rv-2 keep-all">대표님이 원하신 네이버·릴스는 그대로. 위플레이스는 그 한 컷이 묻히지 않고 검색에 남도록, 뒤를 잇습니다.</p>
+    <div class="flow rv rv-3">
+      <div class="step"><span class="n">릴스</span><h3 class="keep-all">장면을 보여준다</h3><p class="keep-all">리뉴얼된 공간과 손길의 결.</p></div>
+      <div class="step"><span class="n">스레드</span><h3 class="keep-all">검색되는 문장을 남긴다</h3><p class="keep-all">영상 위의 결을 글로 옮겨 신호로.</p></div>
+      <div class="step"><span class="n">홈페이지</span><h3 class="keep-all">공식 기준점이 된다</h3><p class="keep-all">매장을 설명하는 단 하나의 자리.</p></div>
+      <div class="step"><span class="n">AI 검색</span><h3 class="keep-all">읽을 근거가 된다</h3><p class="keep-all">검색·AI가 해윤제를 이해하는 바탕.</p></div>
+    </div>
+    <hr class="divider rv">
+    <p class="sm rv keep-all">기존 계약(A안)은 네이버·블로그까지. 릴스부터 이 흐름 전체는 B안에서 시작됩니다.</p>
+  </div>
+</section>
+
+<!-- ===== 역할 분담 (패럴렐) ===== -->
+<section>
+  <div class="col">
+    <span class="label rv">Together</span>
+    <h2 class="rv rv-1 keep-all">대표님은 매장을,<br>위플레이스는 구조를.</h2>
+    <div class="roles rv rv-2">
+      <div class="role"><div class="rt">대표님 · 현장</div><h3 class="keep-all">현장감과 운영 철학</h3><ul><li>리뉴얼 과정 · 매장의 결</li><li>릴스에 담을 소재</li><li>관리 톤 · 운영 방향</li></ul></div>
+      <div class="role"><div class="rt">위플레이스 · 구조</div><h3 class="keep-all">설계와 검색 구조화</h3><ul><li>릴스 주제 설계 · 문구</li><li>스레드 전환 · 홈페이지 반영</li><li>네이버 · 구글 · AI 검색 정리</li></ul></div>
+      <div class="role"><div class="rt">함께 · 조율</div><h3 class="keep-all">매장의 공식 정보</h3><ul><li>코스명 · 가격표</li><li>예약 문구 · 동선</li><li>오픈 전후 발행 순서</li></ul></div>
+    </div>
+    <hr class="divider rv">
+    <p class="sm rv keep-all">대표님은 소재만. 시간이 드는 설계·문구·검색 반영은 이쪽이 가져갑니다.</p>
+  </div>
+</section>
+
+<!-- ===== SCENE 데스크 ===== -->
+<section class="scene" style="--scene:url('haeyunje-desk.jpg');">
+  <div class="col">
+    <span class="label rv">Scene</span>
+    <h2 class="rv rv-1 keep-all">매장은 대표님이,<br>검색에 남는 자리는 이쪽이.</h2>
+  </div>
+</section>
+
+<!-- ===== ISOLATION (Von Restorff · 핀 신호) ===== -->
+<section class="isolate">
+  <div class="col">
+    <div class="word rv">자리</div>
+    <div class="cap rv rv-1 keep-all">매장의 자리, 사람 안의 자리, 그리고 검색 속 이름의 자리.</div>
+  </div>
+</section>
+
+<!-- ===== SCENE 복도 ===== -->
+<section class="scene" style="--scene:url('haeyunje-hallway.jpg');">
+  <div class="col">
+    <span class="label rv">Why now</span>
+    <h2 class="rv rv-1 keep-all">요즘 고객은,<br>검색을 한 번 더 확인합니다.</h2>
+  </div>
+</section>
+
+<!-- ===== 검색·AI (존3) ===== -->
+<section class="tight">
+  <div class="col">
+    <p class="tp rv keep-all" style="font-family:var(--font-display); font-size:19px; font-weight:700;">구글 지도를 보고, AI에게 "동탄 전통마사지 괜찮은 곳"을 묻습니다.</p>
+    <p class="rv rv-1 keep-all">이때 읽히는 건 광고가 아니라, 정리된 공식 정보입니다. 이번 작업은 결국 셋.</p>
+    <div class="flow rv rv-2" style="margin-top:20px;">
+      <div class="step"><span class="n">하나</span><h3 class="keep-all">검색 첫인상 정비</h3><p class="keep-all">새 이름으로 찾아도 깔끔하게.</p></div>
+      <div class="step"><span class="n">둘</span><h3 class="keep-all">공식 기준점 구축</h3><p class="keep-all">매장을 설명하는 단 하나의 자리.</p></div>
+      <div class="step"><span class="n">셋</span><h3 class="keep-all">읽기 좋은 정보 구조</h3><p class="keep-all">검색·AI가 인용할 수 있게.</p></div>
+    </div>
+    <p class="sm rv keep-all" style="margin-top:18px;">※ 즉시 고정 노출을 약속하진 않습니다. 다만 신호를 정렬해두면, 먼저 읽힐 근거가 남습니다. 늦을수록 따라잡는 값이 커집니다.</p>
+  </div>
+</section>
+
+<!-- ===== CAPTURE 미끼 (공유 한 줄) ===== -->
+<section class="tight">
+  <div class="col capture">
+    <span class="label rv">—</span>
+    <div class="frame rv rv-1">
+      <blockquote class="keep-all">간판은 한 번 바꾸면 끝이지만,<br>검색 속 이름은 새로 세워야 합니다.</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 로드맵 ===== -->
+<section>
+  <div class="col">
+    <span class="label rv">90 Days</span>
+    <h2 class="rv rv-1 keep-all">오픈을 기준으로,<br>90일을 끊습니다.</h2>
+    <div class="road rv rv-2">
+      <div class="ph">
+        <div class="pt">D-14 → D-Day</div>
+        <h3 class="keep-all">오픈 전 정비</h3>
+        <ul><li>네이버 상호·정보·가격 정비</li><li>리뉴얼 사진 촬영·교체</li><li>구글 기준점 생성</li><li>이어받는 후기 연결 점검</li></ul>
+        <div class="res keep-all">오픈일에 새 이름으로 찾아도, 비어 있지 않다.</div>
+      </div>
+      <div class="ph">
+        <div class="pt">D-Day → D+30</div>
+        <h3 class="keep-all">오픈 직후 신뢰 축적</h3>
+        <ul><li>리뉴얼 공간 릴스 발행</li><li>릴스 → 스레드 연결</li><li>홈페이지 1차 오픈</li><li>코스·컨디션 관리 안내 정리</li></ul>
+        <div class="res keep-all">"운영 중이고, 믿을 만하다"는 신호가 쌓인다.</div>
+      </div>
+      <div class="ph">
+        <div class="pt">D+30 → D+90</div>
+        <h3 class="keep-all">검색·예약 완성</h3>
+        <ul><li>FAQ·매장정보 구조화</li><li>구글·홈페이지·SNS 정렬</li><li>예약 동선 점검</li><li>첫 리포트 + 다음 흐름</li></ul>
+        <div class="res keep-all">해윤제가 검색에서, 하나의 정돈된 자리로 선다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCENE 텍스처 (피크 직전) ===== -->
+<section class="scene" style="--scene:url('haeyunje-texture.jpg');">
+  <div class="col">
+    <span class="label rv">Before pricing</span>
+    <h2 class="rv rv-1 keep-all">이건 광고비가 아니라,<br>자리를 세우는 첫 90일의 값입니다.</h2>
+  </div>
+</section>
+
+<!-- ===== 가격 (PEAK · 가장 강하게) ===== -->
+<section>
+  <div class="col">
+    <span class="label rv">Investment</span>
+    <h2 class="rv rv-1 keep-all">'인상'이 아니라,<br>일의 종류가 바뀌었습니다.</h2>
+    <p class="rv rv-2 keep-all">기존 300은 블로그 대행의 값. 이번은 인수·상호변경·리뉴얼을 검색에서 한자리로 세우는 값.</p>
+    <div class="price rv rv-3">
+      <div class="p">
+        <div class="pl">A · 기존 유지형</div>
+        <div class="pn keep-all">네이버 · 블로그 중심</div>
+        <div class="pa">300<small> 만 원 / 년 · VAT 별도</small></div>
+        <ul><li>네이버 플레이스 관리</li><li>블로그 포스팅 중심</li></ul>
+        <p class="pos keep-all">릴스·스레드·홈페이지·AI 미포함. 상호변경·리뉴얼을 알리기엔 좁다.</p>
+      </div>
+      <div class="p reco">
+        <div class="pin-w">추천 · 한 안에 다 담긴다</div>
+        <div class="pl">B · 인수 런칭형</div>
+        <div class="pn keep-all">전환 전체를 한자리로</div>
+        <div class="pa big">600<small> 만 원 / 년 · VAT 별도</small></div>
+        <ul><li>A안 네이버 관리 전부</li><li>릴스 기획·발행 + 스레드 연결</li><li>구글 / AI 검색 정보 구조 정리</li><li>공식 기준점 홈페이지 + 예약 동선</li></ul>
+        <p class="pos keep-all">네이버·릴스가 처음으로 한 안에. 1년 통합 운영 시 홈페이지 제작 포함.</p>
+      </div>
+      <div class="p">
+        <div class="pl">C · 대표 확장 브랜딩형</div>
+        <div class="pn keep-all">해윤제라는 이름까지</div>
+        <div class="pa">900<small> 만 원 / 년 · VAT 별도</small></div>
+        <ul><li>B안 전체 포함</li><li>대표님 경험을 신뢰의 결로</li><li>'해윤제' 명인 브랜드 자리 강화</li></ul>
+        <p class="pos keep-all">매장을 넘어, 이름 자체를 자산으로 키울 때.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 결제 방식 ===== -->
+<section class="tight">
+  <div class="col">
+    <span class="label rv">Payment</span>
+    <h2 class="rv rv-1 keep-all">어떻게 내느냐로,<br>총값이 갈립니다.</h2>
+    <div class="pay rv rv-2">
+      <div class="opt">
+        <div class="ot">1년 통합 운영</div>
+        <div class="ov keep-all">600만 <small style="font-size:14px;font-weight:400;color:var(--text-muted)">+ VAT</small></div>
+        <div class="od keep-all">홈페이지 제작 — 서비스 포함</div>
+      </div>
+      <div class="opt">
+        <div class="ot">분기별 결제</div>
+        <div class="ov keep-all">840만 <small style="font-size:14px;font-weight:400;color:var(--text-muted)">+ VAT</small></div>
+        <div class="od keep-all">운영 180 × 4 = 720, 홈페이지 120 별도 · 1년 환산</div>
+      </div>
+    </div>
+    <p class="save rv rv-3 keep-all">통합 운영이 <span class="a">240만 원 + VAT</span>를 덜고,<br>홈페이지까지 안고 갑니다.</p>
+  </div>
+</section>
+
+<!-- ===== 홈페이지 범위 ===== -->
+<section class="tight">
+  <div class="col">
+    <span class="label rv">Homepage</span>
+    <h2 class="rv rv-1 keep-all">홈페이지는,<br>이번 전환의 공식 자리.</h2>
+    <div class="scope rv rv-2">
+      <div class="blk"><div class="st">포함</div><p class="keep-all"><b style="color:var(--text-primary)">원페이지형 공식 소개 페이지</b> 기준. 매장 소개·코스/가격·위치·영업시간·FAQ·예약 동선이 한 자리에.</p></div>
+      <div class="blk ex"><div class="st">별도 협의</div><p class="keep-all">별도 촬영, 로고 개발, 다국어, 예약 시스템 개발, 복수 페이지 확장.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section>
+  <div class="col">
+    <span class="label rv">FAQ</span>
+    <h2 class="rv rv-1 keep-all">자주 물으실<br>다섯 가지.</h2>
+    <div class="faq rv rv-2">
+      <details><summary class="keep-all">네이버·릴스만 해도 되지 않나요?</summary><div class="a keep-all">출발점으론 맞습니다. 다만 릴스는 며칠 뒤 묻히고, 네이버 하나로는 구글·AI에서 빠질 수 있습니다. B안은 같은 소재를 자리로 잇는 데까지 갑니다.</div></details>
+      <details><summary class="keep-all">AI 검색 노출이 바로 보장되나요?</summary><div class="a keep-all">즉시 고정은 약속하지 않습니다. 광고가 아니니까요. 다만 신호를 정렬해두면 읽힐 근거가 쌓이고, 누적될수록 가능성이 오릅니다.</div></details>
+      <details><summary class="keep-all">릴스는 대표가 직접 해도 되나요?</summary><div class="a keep-all">현장 소재는 대표님이 제일 잘 담으십니다. 주제 설계·문구·스레드 전환·홈페이지 반영은 이쪽이. 찍어 주시면 나머지는 가져갑니다.</div></details>
+      <details><summary class="keep-all">분기 결제로 시작할 수 있나요?</summary><div class="a keep-all">가능합니다. 분기 180만 + VAT로 가볍게, 홈페이지 120만 + VAT는 별도. 다만 1년 환산 840만 + VAT — 통합(600만, 홈페이지 포함)보다 240만 더.</div></details>
+      <details><summary class="keep-all">홈페이지는 왜 필요한가요?</summary><div class="a keep-all">네이버 예약을 대체하려는 게 아닙니다. 검색·AI·SNS가 함께 볼 공식 자리가 한 곳 필요해서. 이름이 바뀌는 지금, 그 자리가 있으면 모든 채널이 같은 기준으로 섭니다.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT (Peak-End · 가장 짧게 · 잔여 문의) ===== -->
+<section class="contact" id="contact">
+  <div class="col">
+    <span class="label rv">Contact</span>
+    <h2 class="rv rv-1 keep-all">리뉴얼 오픈일,<br>한 줄만 주세요.</h2>
+    <p class="lead rv rv-2 keep-all">그 날짜에 맞춰 90일 순서부터 잡아 보내드립니다.</p>
+    <div class="pin rv rv-3 keep-all">그 자리를, 새 이름으로.</div>
+    <div class="note rv keep-all">담당자 / 연락처 / 카카오 채널 삽입 예정</div>
+  </div>
+</section>
+
+<footer class="foot"><div class="col">Weplace × Mashcore · 해윤제 명인전통마사지 · 2026</div></footer>
+
+<div class="sticky"><div class="col"><a href="#contact">오픈일 한 줄 보내기 →</a></div></div>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+  const tabs=document.querySelectorAll('.tab');
+  const panels=document.querySelectorAll('.tab-panel');
+  tabs.forEach(t=>t.addEventListener('click',()=>{
+    tabs.forEach(x=>x.setAttribute('aria-selected','false'));
+    t.setAttribute('aria-selected','true');
+    const i=t.dataset.t;
+    panels.forEach(p=>p.classList.toggle('on', p.dataset.p===i));
+  }));
+</script>
+</body>
+</html>
