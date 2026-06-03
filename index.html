@@ -30,11 +30,11 @@
   --maxw:560px;
   --ease:cubic-bezier(.22,.61,.36,1);
 
-  /* ── 배경 사진 경로 (여기만 바꾸면 전체에 적용) ── */
-  --img-hero:url("images/hero.jpg");
-  --img-handover:url("images/band-handover.jpg");
-  --img-spot:url("images/spot.jpg");
-  --img-cta:url("images/cta.jpg");
+  /* ── 배경 사진 경로 (HTML과 같은 폴더에 jpg 4개를 두세요) ── */
+  --img-hero:url("hero.jpg");
+  --img-handover:url("band-handover.jpg");
+  --img-spot:url("spot.jpg");
+  --img-cta:url("cta.jpg");
 }
 
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -312,13 +312,14 @@ footer .fs{font-size:11.5px;color:var(--muted-2);margin-top:14px;line-height:1.8
 
 <!--
   ─────────────────────────────────────────────
-  배경 이미지: 이 HTML과 같은 폴더에 images/ 를 만들고 아래 파일을 넣으세요.
-    images/hero.jpg          · 히어로 배경        (세로, 4:5 권장)
-    images/band-handover.jpg · 전환 밴드 배경      (가로, 16:9)
-    images/spot.jpg          · "선점할 자리" 배경   (가로, 3:2)
-    images/cta.jpg           · 마지막 CTA 배경      (가로, 16:9)
-  파일명만 맞추면 자동 적용됩니다. 경로 변경은 <style> 안 :root 의 --img-* 에서.
-  사진이 없으면 해당 구역은 기존처럼 어두운 배경으로 깔끔히 표시됩니다.
+  배경 이미지: 이 HTML 파일과 "같은 폴더"에 아래 4개 jpg를 함께 두세요. (하위 폴더 X)
+    hero.jpg          · 히어로 배경
+    band-handover.jpg · 전환 밴드 배경
+    spot.jpg          · "선점할 자리" 배경
+    cta.jpg           · 마지막 CTA 배경
+  GitHub이면 HTML과 jpg 4개가 같은 위치(루트)에 올라가 있어야 합니다.
+  파일명·확장자는 소문자 그대로 (대문자 / .JPG 금지). 경로 수정은 :root 의 --img-* 에서.
+  사진이 없으면 해당 구역은 어두운 배경으로 깔끔히 표시됩니다.
   ─────────────────────────────────────────────
 -->
 
