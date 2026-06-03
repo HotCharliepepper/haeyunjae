@@ -12,23 +12,29 @@
 
 <style>
 :root{
-  --ink:#0E0B08;
-  --ink-2:#15110B;
-  --ink-3:#1C1710;
-  --panel:#1F1A12;
-  --line:rgba(201,168,97,.18);
-  --line-soft:rgba(201,168,97,.10);
-  --cream:#EFE7D6;
-  --cream-dim:#C9BFA9;
-  --muted:#8C8170;
-  --muted-2:#6E6555;
-  --gold:#C9A861;
+  --ink:#15110C;
+  --ink-2:#1C160F;
+  --ink-3:#241D14;
+  --panel:#241D13;
+  --line:rgba(201,168,97,.20);
+  --line-soft:rgba(201,168,97,.11);
+  --cream:#F2EBDB;
+  --cream-dim:#CFC6B0;
+  --muted:#968B79;
+  --muted-2:#7A7160;
+  --gold:#CDAE68;
   --gold-deep:#A6813B;
-  --gold-soft:#D9C290;
+  --gold-soft:#E0CB98;
   --brown:#3A2C1E;
   --brown-2:#241A11;
   --maxw:560px;
   --ease:cubic-bezier(.22,.61,.36,1);
+
+  /* ── 배경 사진 경로 (여기만 바꾸면 전체에 적용) ── */
+  --img-hero:url("images/hero.jpg");
+  --img-handover:url("images/band-handover.jpg");
+  --img-spot:url("images/spot.jpg");
+  --img-cta:url("images/cta.jpg");
 }
 
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -47,9 +53,9 @@ body{
 body::before{
   content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(1200px 700px at 85% -5%, rgba(166,129,59,.13), transparent 60%),
-    radial-gradient(900px 600px at 0% 35%, rgba(58,44,30,.45), transparent 55%),
-    radial-gradient(1000px 800px at 100% 100%, rgba(166,129,59,.07), transparent 60%);
+    radial-gradient(1200px 720px at 82% -5%, rgba(176,138,66,.16), transparent 60%),
+    radial-gradient(900px 600px at 0% 35%, rgba(58,44,30,.22), transparent 58%),
+    radial-gradient(1000px 800px at 100% 100%, rgba(176,138,66,.09), transparent 60%);
 }
 body::after{
   content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;
@@ -80,6 +86,38 @@ em.q{font-style:normal;color:var(--gold-soft);}
 .r{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease);}
 .r.in{opacity:1;transform:none;}
 .r.d1{transition-delay:.08s}.r.d2{transition-delay:.16s}.r.d3{transition-delay:.24s}.r.d4{transition-delay:.32s}.r.d5{transition-delay:.4s}
+
+/* ===== PHOTO LAYERS (배경 사진 + 스크림) ===== */
+.photo-hero{
+  background-color:var(--ink);
+  background-image:
+    linear-gradient(180deg, rgba(21,17,12,.18) 0%, rgba(21,17,12,.44) 48%, rgba(21,17,12,.90) 86%, var(--ink) 100%),
+    linear-gradient(95deg, rgba(21,17,12,.58) 0%, rgba(21,17,12,.16) 52%, transparent 100%),
+    var(--img-hero);
+  background-size:cover;background-position:center;background-repeat:no-repeat;
+}
+.photo-hero h1,.photo-hero .sub{text-shadow:0 2px 30px rgba(0,0,0,.5);}
+
+.band{
+  position:relative;min-height:46vh;min-height:46svh;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:64px 28px;overflow:hidden;background-color:var(--ink);
+}
+.band::before{content:"";position:absolute;inset:0;background:var(--band-src) center/cover no-repeat;}
+.band::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,var(--ink) 0%, rgba(21,17,12,.40) 30%, rgba(21,17,12,.46) 70%, var(--ink) 100%);}
+.band .bq{position:relative;z-index:2;max-width:440px;font-family:"Noto Serif KR";font-weight:400;
+  font-size:25px;line-height:1.5;color:var(--cream);text-shadow:0 2px 26px rgba(0,0,0,.6);}
+.band .bq .g{color:var(--gold-soft);}
+.band-handover{--band-src:var(--img-handover);}
+
+.photo-sec{position:relative;background-color:var(--ink);}
+.photo-sec::before{content:"";position:absolute;inset:0;z-index:0;background:var(--sec-src) center/cover no-repeat;}
+.photo-sec::after{content:"";position:absolute;inset:0;z-index:0;
+  background:linear-gradient(180deg,var(--ink) 0%, rgba(21,17,12,.48) 24%, rgba(21,17,12,.58) 76%, var(--ink) 100%);}
+.photo-sec > .wrap{position:relative;z-index:1;}
+.spot{--sec-src:var(--img-spot);}
+.cta-photo{--sec-src:var(--img-cta);}
 
 /* ===== HERO ===== */
 .hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:90px 0 70px;}
@@ -272,8 +310,20 @@ footer .fs{font-size:11.5px;color:var(--muted-2);margin-top:14px;line-height:1.8
 </head>
 <body>
 
+<!--
+  ─────────────────────────────────────────────
+  배경 이미지: 이 HTML과 같은 폴더에 images/ 를 만들고 아래 파일을 넣으세요.
+    images/hero.jpg          · 히어로 배경        (세로, 4:5 권장)
+    images/band-handover.jpg · 전환 밴드 배경      (가로, 16:9)
+    images/spot.jpg          · "선점할 자리" 배경   (가로, 3:2)
+    images/cta.jpg           · 마지막 CTA 배경      (가로, 16:9)
+  파일명만 맞추면 자동 적용됩니다. 경로 변경은 <style> 안 :root 의 --img-* 에서.
+  사진이 없으면 해당 구역은 기존처럼 어두운 배경으로 깔끔히 표시됩니다.
+  ─────────────────────────────────────────────
+-->
+
 <!-- ===================== HERO ===================== -->
-<section class="hero">
+<section class="hero photo-hero">
   <div class="wrap">
     <div class="brandline r in">HAEYUNJE · 명인전통마사지</div>
     <h1 class="r in d1">
@@ -337,6 +387,11 @@ footer .fs{font-size:11.5px;color:var(--muted-2);margin-top:14px;line-height:1.8
 </section>
 
 <div class="hr"></div>
+
+<!-- ===================== 전환 밴드 (사진) ===================== -->
+<section class="band band-handover">
+  <div class="bq r">같은 자리에서,<br><span class="g">새 이름으로 다시.</span></div>
+</section>
 
 <!-- ===================== 고객이 헷갈리는 지점 ===================== -->
 <section class="anchor">
@@ -489,7 +544,7 @@ footer .fs{font-size:11.5px;color:var(--muted-2);margin-top:14px;line-height:1.8
 <div class="hr"></div>
 
 <!-- ===================== 선점할 자리 ===================== -->
-<section class="anchor">
+<section class="anchor photo-sec spot">
   <div class="wrap">
     <div class="kicker r">아직 비어 있는 자리</div>
     <h2 class="r d1">
@@ -749,7 +804,7 @@ footer .fs{font-size:11.5px;color:var(--muted-2);margin-top:14px;line-height:1.8
 <div class="hr"></div>
 
 <!-- ===================== CTA ===================== -->
-<section class="cta">
+<section class="cta photo-sec cta-photo">
   <div class="wrap">
     <div class="kicker r">시작은 한 줄이면 됩니다</div>
     <h2 class="r d1">
