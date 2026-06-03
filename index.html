@@ -233,6 +233,18 @@ em.q{font-style:normal;color:var(--gold-soft);}
 .rbody .rt{font-family:"Noto Serif KR";font-size:16px;color:var(--cream);}
 .rbody .rd{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.7;}
 
+/* channel chips (확장 로드맵) */
+.ctag{display:inline-block;font-family:"Pretendard";font-size:11.5px;letter-spacing:.01em;color:var(--gold-soft);
+  background:rgba(201,168,97,.07);border:1px solid var(--line-soft);border-radius:20px;padding:5px 11px;margin:9px 6px 0 0;}
+.ctag.opt{color:var(--muted);background:rgba(242,235,219,.03);border-color:var(--line-soft);}
+
+/* expected effects */
+.eff{display:grid;grid-template-columns:1fr;gap:12px;}
+.ecard{background:linear-gradient(160deg,var(--ink-3),var(--ink-2));border:1px solid var(--line-soft);border-radius:15px;padding:20px 18px;}
+.ecard .et{font-family:"Noto Serif KR";font-size:15.5px;color:var(--gold-soft);}
+.ecard .ed{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.65;}
+@media(min-width:600px){.eff{grid-template-columns:1fr 1fr;}}
+
 /* scope shift before/after */
 .shift{display:flex;flex-direction:column;gap:12px;}
 .srow{display:grid;grid-template-columns:1fr;gap:12px;}
@@ -872,6 +884,100 @@ footer .fbiz{max-width:360px;margin:22px auto 0;padding-top:18px;border-top:1px 
         <div class="bv__line bv__free"><span>1년 통결제 시</span><b>포함 · 0원</b></div>
       </div>
     </div>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ===================== 기대 효과 ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">기대 효과</div>
+    <h2 class="r d1">
+      <span class="b">화려한 약속이 아니라,</span><br>
+      예약 전 망설임을 줄이는 변화.
+    </h2>
+    <p class="note r d2" style="margin:18px 0 24px;">
+      이번 작업이 자리 잡으면, 고객이 ‘해윤제’를 만나는 모든 화면에서
+      같은 변화가 천천히 나타납니다.
+    </p>
+
+    <div class="eff r d2">
+      <div class="ecard"><div class="et">검색 첫인상 정비</div><div class="ed">네이버·구글·AI에서 ‘같은 매장’으로 보여, 새 이름의 첫인상이 단단해집니다.</div></div>
+      <div class="ecard"><div class="et">헷갈림·이탈 감소</div><div class="ed">‘예전 그곳 맞나’ 하는 망설임이 줄어, 확인 단계에서 빠져나가지 않습니다.</div></div>
+      <div class="ecard"><div class="et">예약 동선 강화</div><div class="ed">가격·코스·예약이 한눈에 이어져, 발견이 예약으로 자연스럽게 연결됩니다.</div></div>
+      <div class="ecard"><div class="et">후기·재방문 누적</div><div class="ed">이어받은 후기 174건 위에 새 후기가 쌓여, 해윤제 이름의 신뢰가 두터워집니다.</div></div>
+    </div>
+
+    <p class="note r d3" style="margin-top:24px;">
+      과장된 효과를 약속하기보다,
+      <span class="gold">고객이 예약 전에 느끼는 망설임을 줄이는 구조</span>를 만드는 데 집중합니다.
+    </p>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ===================== 확장 로드맵 (추후 로드맵) ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">이 비용은 끝이 아닙니다</div>
+    <h2 class="r d1">
+      90일은 끝이 아니라,<br>
+      <span class="gold">천천히 넓혀가는 0단계입니다.</span>
+    </h2>
+    <p class="note r d2" style="margin:18px 0 24px;">
+      처음부터 모든 채널을 벌이지 않습니다. 발견·신뢰 화면을 먼저 세우고,
+      <span class="gold">숫자로 확인한 뒤</span> 실제 예약을 만든 채널에만 천천히 더합니다.
+    </p>
+
+    <div class="road r d2">
+      <div class="rstep">
+        <div class="rrail"><div class="rtag">0단계</div><div class="rdot"></div><div class="rconn"></div></div>
+        <div class="rbody">
+          <div class="rt">발견·신뢰 기반 <span style="color:var(--muted);font-size:12px;">· 지금</span></div>
+          <div class="rd">네이버 발견부터 구글·홈페이지·AI까지, 해윤제를 한 매장으로 먼저 세웁니다. (90일 인수 전환 런칭)</div>
+          <div><span class="ctag">네이버</span><span class="ctag">구글(GBP)</span><span class="ctag">홈페이지</span><span class="ctag">AI 검색</span></div>
+        </div>
+      </div>
+      <div class="rstep">
+        <div class="rrail"><div class="rtag">1단계</div><div class="rdot"></div><div class="rconn"></div></div>
+        <div class="rbody">
+          <div class="rt">실적 확인</div>
+          <div class="rd">어떤 키워드·화면이 실제 예약을 만드는지 숫자로 확인합니다.</div>
+          <div><span class="ctag">예약 유입 분석</span><span class="ctag">전환 측정</span></div>
+        </div>
+      </div>
+      <div class="rstep">
+        <div class="rrail"><div class="rtag">2단계</div><div class="rdot"></div><div class="rconn"></div></div>
+        <div class="rbody">
+          <div class="rt">검증된 채널 확장</div>
+          <div class="rd">효과 난 채널에 집중해, ‘검색되는 매장’에서 ‘이야기되는 매장’으로 넓힙니다.</div>
+          <div><span class="ctag">스레드</span><span class="ctag">인스타·릴스 정식 운영</span><span class="ctag">구글 리뷰·Q&amp;A</span><span class="ctag">동탄 동네 단골(맘카페·당근)</span></div>
+        </div>
+      </div>
+      <div class="rstep last">
+        <div class="rrail"><div class="rtag">3단계</div><div class="rdot" style="border-color:var(--gold);background:var(--gold)"></div></div>
+        <div class="rbody">
+          <div class="rt">외국인 · 프리미엄 확장 <span style="color:var(--muted);font-size:12px;">· 선택</span></div>
+          <div class="rd">동탄 외국인 생활권은 영어 근거로 장기 롱테일, 대표님의 명인성·전통성은 프리미엄 브랜드로 키웁니다.</div>
+          <div><span class="ctag opt">영어 GBP · 외국인 롱테일</span><span class="ctag opt">명인·전통 브랜드 콘텐츠</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card r d3" style="margin-top:24px;">
+      <p class="small">
+        ＊ 3단계(C안)는 ‘처음부터 다 하는 일’이 아니라, 0~2단계에서 검색·예약이 안정된 뒤
+        <span class="gold">실적을 보고 선택</span>하는 단계입니다. 동탄에 이미 자리 잡은 외국인 생활권과
+        해윤제의 전통성을 장기 자산으로 두기 위한 확장입니다.
+      </p>
+    </div>
+
+    <p class="note r d3" style="margin-top:22px;">
+      그래서 이 제안은 한 해 쓰고 사라지는 비용이 아니라,
+      <span class="gold">실적을 보며 함께 키워가는 성장 시스템의 0단계</span>입니다.
+    </p>
   </div>
 </section>
 
