@@ -3,547 +3,809 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>해윤제 명인전통마사지 · 인수 런칭 제안</title>
-<meta name="description" content="황실에서 해윤제로. 간판은 바뀌었는데, 검색 속 이름은 누군가 새로 세워야 합니다. 첫 90일을 위한 온라인 런칭 제안." />
-<meta name="theme-color" content="#0E0C0A" />
-<meta property="og:title" content="해윤제 명인전통마사지 · 인수 런칭 제안" />
-<meta property="og:description" content="그 자리를, 새 이름으로." />
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="ko_KR" />
+<title>해윤제 명인전통마사지 — 인수 전환 런칭 제안</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700;900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
 <style>
-  :root{
-    --bg-base:#0E0C0A; --bg-surface:#17140F; --bg-elevated:#1F1B14; --bg-deep:#08070A;
-    --text-primary:#F5EFE6; --text-secondary:#A89E8C; --text-muted:#6B6253;
-    --accent:#C8A876; --accent-soft:#8B7355; --accent-deep:#5C4A33;
-    --divider:#2A251D; --divider-soft:#1A160F; --warning:#C97B5C;
-    --font-display:'Noto Serif KR','Pretendard',serif;
-    --font-body:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;
-    --font-accent:'EB Garamond','Noto Serif KR',serif;
-    --gutter-left:24px; --void-right:56px; --content-max:560px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--bg-base); color:var(--text-primary); font-family:var(--font-body);
-    font-size:16px; line-height:1.75; letter-spacing:-0.01em; -webkit-font-smoothing:antialiased;
-    overflow-x:hidden; padding-bottom:76px;
-  }
-  body::before{
-    content:''; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.025;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
-  a{color:inherit;text-decoration:none;}
-  .keep-all{word-break:keep-all;overflow-wrap:break-word;}
+:root{
+  --ink:#0E0B08;
+  --ink-2:#15110B;
+  --ink-3:#1C1710;
+  --panel:#1F1A12;
+  --line:rgba(201,168,97,.18);
+  --line-soft:rgba(201,168,97,.10);
+  --cream:#EFE7D6;
+  --cream-dim:#C9BFA9;
+  --muted:#8C8170;
+  --muted-2:#6E6555;
+  --gold:#C9A861;
+  --gold-deep:#A6813B;
+  --gold-soft:#D9C290;
+  --brown:#3A2C1E;
+  --brown-2:#241A11;
+  --maxw:560px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
 
-  /* 좌측 정박 · 우측 여백 */
-  .col{
-    position:relative; z-index:1;
-    width:min(var(--content-max), calc(100% - var(--gutter-left) - var(--void-right)));
-    margin-left:var(--gutter-left);
-  }
-  @media(min-width:760px){
-    :root{ --gutter-left:72px; --void-right:46vw; }
-  }
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  font-family:"Pretendard",sans-serif;
+  background:var(--ink);
+  color:var(--cream);
+  line-height:1.75;
+  letter-spacing:-.01em;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
 
-  section{ padding:92px 0; position:relative; }
-  section.tight{ padding:64px 0; }
+/* grain + ambient glow */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(1200px 700px at 85% -5%, rgba(166,129,59,.13), transparent 60%),
+    radial-gradient(900px 600px at 0% 35%, rgba(58,44,30,.45), transparent 55%),
+    radial-gradient(1000px 800px at 100% 100%, rgba(166,129,59,.07), transparent 60%);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
 
-  .label{
-    font-family:var(--font-accent); font-style:italic; font-size:14px; letter-spacing:.04em;
-    color:var(--accent-soft); margin-bottom:22px; display:block;
-  }
-  h1,h2{ font-family:var(--font-display); font-weight:700; line-height:1.3; letter-spacing:-0.02em; color:var(--text-primary); }
-  h1{ font-size:clamp(30px,8.6vw,46px); font-weight:900; }
-  h2{ font-size:clamp(24px,6.6vw,32px); }
-  h2 .a, h1 .a{ color:var(--accent); }
-  p{ color:var(--text-secondary); font-size:16px; margin-top:16px; }
-  p.tp{ color:var(--text-primary); }
-  .sm{ font-size:14px; color:var(--text-muted); }
-  .divider{ height:1px; background:var(--divider); border:0; margin:28px 0; width:64px; }
+.wrap{position:relative;z-index:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 26px;}
+section{position:relative;z-index:1;}
 
-  /* reveal */
-  .rv{ opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s ease; }
-  .rv.in{ opacity:1; transform:none; }
-  .rv-1{transition-delay:.08s}.rv-2{transition-delay:.18s}.rv-3{transition-delay:.28s}
+/* type */
+.serif{font-family:"Noto Serif KR",serif;}
+.eng{font-family:"Cormorant Garamond",serif;}
+.kicker{
+  font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;margin-bottom:22px;
+  display:flex;align-items:center;gap:12px;
+}
+.kicker::before{content:"";width:26px;height:1px;background:var(--gold-deep);opacity:.7;}
 
-  /* ===== Hero ===== */
-  .hero{ min-height:96vh; display:flex; align-items:flex-end; overflow:hidden; padding:0; }
-  .hero::after{
-    content:''; position:absolute; inset:0; z-index:0;
-    background:
-      linear-gradient(180deg, rgba(14,12,10,.42) 0%, rgba(14,12,10,.6) 46%, rgba(14,12,10,.97) 100%),
-      url('haeyunje-hero-room.jpg') center/cover no-repeat,
-      var(--bg-base);
-  }
-  .hero .col{ z-index:1; padding-bottom:72px; padding-top:120px; }
-  .hero .eyebrow{ font-family:var(--font-accent); font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin-bottom:26px; display:block; }
-  .hero h1{ color:var(--text-primary); }
-  .hero .pin{ font-family:var(--font-accent); font-style:italic; font-size:18px; color:var(--accent); margin-top:22px; }
-  .hero .cue{ margin-top:40px; font-size:13px; color:var(--text-muted); letter-spacing:.1em; }
+h1,h2,h3{font-family:"Noto Serif KR",serif;font-weight:500;letter-spacing:-.02em;line-height:1.32;}
+h2{font-size:27px;color:var(--cream);}
+.lead{font-size:16.5px;color:var(--cream-dim);font-weight:300;line-height:1.85;}
+.small{font-size:13.5px;color:var(--muted);line-height:1.7;}
+.gold{color:var(--gold-soft);}
+em.q{font-style:normal;color:var(--gold-soft);}
 
-  /* ===== scene (atmospheric full-bleed) ===== */
-  .scene{ min-height:72vh; display:flex; align-items:flex-end; overflow:hidden; }
-  .scene::after{
-    content:''; position:absolute; inset:0; z-index:0;
-    background:
-      linear-gradient(180deg, rgba(14,12,10,.3) 0%, rgba(14,12,10,.55) 50%, rgba(14,12,10,.96) 100%),
-      var(--scene) center/cover no-repeat, var(--bg-base);
-  }
-  .scene .col{ z-index:1; padding-bottom:64px; }
-  .scene h2{ color:var(--text-primary); }
+/* reveal */
+.r{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease);}
+.r.in{opacity:1;transform:none;}
+.r.d1{transition-delay:.08s}.r.d2{transition-delay:.16s}.r.d3{transition-delay:.24s}.r.d4{transition-delay:.32s}.r.d5{transition-delay:.4s}
 
-  /* before → after (세로) */
-  .ba{ margin-top:28px; }
-  .ba .row{ padding:18px 0; border-bottom:1px solid var(--divider); }
-  .ba .row:last-child{ border-bottom:0; }
-  .ba .rl{ font-family:var(--font-accent); font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--text-muted); }
-  .ba .rn{ font-family:var(--font-display); font-size:22px; font-weight:700; margin-top:4px; }
-  .ba .rn.now{ color:var(--accent); }
+/* ===== HERO ===== */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:90px 0 70px;}
+.hero .wrap{padding-top:0;}
+.brandline{font-size:12px;letter-spacing:.5em;color:var(--gold);text-transform:uppercase;margin-bottom:46px;font-weight:600;}
+.hero h1{font-size:40px;line-height:1.34;font-weight:400;}
+.hero h1 .b{color:var(--muted-2);font-weight:300;}
+.hero h1 .g{color:var(--gold-soft);}
+.hero .sub{margin-top:30px;font-size:15.5px;color:var(--cream-dim);font-weight:300;line-height:1.85;max-width:430px;}
+.hero .tag{margin-top:54px;display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.06em;color:var(--muted);}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold);}
+.scrollcue{margin-top:60px;font-size:11px;letter-spacing:.32em;color:var(--muted-2);text-transform:uppercase;display:flex;align-items:center;gap:10px;}
+.scrollcue .ln{width:1px;height:34px;background:linear-gradient(var(--gold-deep),transparent);}
 
-  /* fact list */
-  .facts{ margin-top:26px; }
-  .facts li{ list-style:none; padding:14px 0; border-bottom:1px solid var(--divider-soft); }
-  .facts li:last-child{ border-bottom:0; }
-  .facts b{ color:var(--text-primary); font-weight:700; }
-  .facts span{ color:var(--text-secondary); }
+/* dividers */
+.hr{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:0 auto;max-width:var(--maxw);}
+.gap-l{height:130px}.gap-m{height:90px}.gap-s{height:54px}
 
-  /* loss line */
-  .loss{ font-family:var(--font-display); font-size:clamp(22px,6vw,28px); font-weight:700; line-height:1.45; color:var(--text-primary); }
-  .loss .a{ color:var(--warning); }
+/* frame quote (emotional anchors) */
+.anchor{padding:96px 0;}
+.anchor h2{font-size:30px;font-weight:400;line-height:1.45;}
+.anchor h2 .b{color:var(--muted-2);font-weight:300;}
+.anchor .note{margin-top:30px;font-size:14.5px;color:var(--cream-dim);font-weight:300;line-height:1.85;}
 
-  /* ===== 분기 탭 ===== */
-  .tabs{ display:flex; flex-wrap:wrap; gap:8px; margin-top:26px; }
-  .tab{
-    font-family:var(--font-body); font-size:14px; color:var(--text-secondary); cursor:pointer;
-    background:transparent; border:1px solid var(--divider); border-radius:999px; padding:11px 16px; min-height:44px;
-    transition:.18s ease;
-  }
-  .tab[aria-selected="true"]{ color:var(--bg-base); background:var(--accent); border-color:var(--accent); font-weight:600; }
-  .tab:hover{ border-color:var(--accent-soft); }
-  .tab-body{ margin-top:22px; min-height:96px; }
-  .tab-panel{ display:none; }
-  .tab-panel.on{ display:block; animation:fade .5s ease; }
-  @keyframes fade{ from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:none} }
-  .tab-panel .q{ font-family:var(--font-display); font-size:19px; font-weight:700; color:var(--text-primary); }
-  .tab-panel p{ margin-top:10px; }
+/* cards / lists */
+.card{
+  background:linear-gradient(160deg,var(--ink-3),var(--ink-2));
+  border:1px solid var(--line-soft);border-radius:16px;padding:26px 24px;
+}
+.facts{display:flex;flex-direction:column;gap:1px;border-radius:16px;overflow:hidden;border:1px solid var(--line-soft);}
+.fact{background:linear-gradient(160deg,var(--ink-3),var(--ink-2));padding:20px 22px;display:flex;gap:16px;align-items:flex-start;}
+.fact .ix{font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--gold);min-width:26px;line-height:1.4;font-style:italic;}
+.fact .tt{font-size:15px;color:var(--cream);font-weight:500;}
+.fact .ds{font-size:13px;color:var(--muted);margin-top:4px;line-height:1.6;}
+.fact.keep .tt{color:var(--gold-soft);}
 
-  /* flow (세로) */
-  .flow{ margin-top:26px; }
-  .flow .step{ padding:16px 0; border-bottom:1px solid var(--divider-soft); position:relative; padding-left:78px; }
-  .flow .step:last-child{ border-bottom:0; }
-  .flow .step .n{ position:absolute; left:0; top:16px; font-family:var(--font-accent); font-style:italic; font-size:13px; color:var(--accent); letter-spacing:.06em; }
-  .flow .step h3{ font-family:var(--font-display); font-size:18px; font-weight:700; }
-  .flow .step p{ margin-top:4px; font-size:14px; }
+/* customer questions */
+.qcol{display:flex;flex-direction:column;gap:14px;}
+.qline{
+  border-left:2px solid var(--gold-deep);padding:6px 0 6px 20px;
+  font-family:"Noto Serif KR",serif;font-size:18px;color:var(--cream);font-weight:400;
+}
+.qline span{display:block;font-family:"Pretendard";font-size:12.5px;color:var(--muted);font-weight:400;margin-top:5px;letter-spacing:0;}
 
-  /* role (세로) */
-  .roles{ margin-top:8px; }
-  .role{ padding:24px 0; border-bottom:1px solid var(--divider); }
-  .role:last-child{ border-bottom:0; }
-  .role .rt{ font-family:var(--font-accent); font-style:italic; font-size:13px; color:var(--accent); }
-  .role h3{ font-family:var(--font-display); font-size:20px; font-weight:700; margin-top:6px; }
-  .role ul{ margin-top:12px; }
-  .role li{ list-style:none; padding-left:16px; position:relative; margin:7px 0; color:var(--text-secondary); font-size:15px; }
-  .role li::before{ content:''; position:absolute; left:0; top:13px; width:7px; height:1px; background:var(--accent-soft); }
+/* AI mock */
+.aimock{
+  background:linear-gradient(165deg,#17140F,#100D09);
+  border:1px solid var(--line);border-radius:18px;padding:18px 16px 20px;
+  box-shadow:0 30px 60px -30px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.03);
+}
+.aibar{display:flex;align-items:center;gap:8px;padding:2px 4px 14px;border-bottom:1px solid var(--line-soft);}
+.aibar .dotr{width:9px;height:9px;border-radius:50%;}
+.r1{background:#5b4a32}.r2{background:#3f3522}.r3{background:#2c2519}
+.aibar .ttl{margin-left:8px;font-size:11px;letter-spacing:.18em;color:var(--muted-2);text-transform:uppercase;}
+.uq{margin:16px 2px 18px;display:flex;justify-content:flex-end;}
+.uq .b{background:#2a2114;border:1px solid var(--line-soft);color:var(--cream-dim);font-size:13.5px;padding:11px 15px;border-radius:14px 14px 4px 14px;max-width:84%;}
+.ans{display:flex;gap:12px;align-items:flex-start;margin:0 2px;}
+.ans .avt{width:26px;height:26px;border-radius:50%;flex:none;background:radial-gradient(circle at 35% 30%,var(--gold-soft),var(--gold-deep));box-shadow:0 0 14px rgba(201,168,97,.4);}
+.ans .body{font-size:13.5px;color:var(--cream-dim);line-height:1.75;}
+.ans .body .h{color:var(--cream);font-weight:600;}
+.aireco{margin-top:12px;display:flex;flex-direction:column;gap:9px;}
+.airow{display:flex;gap:11px;align-items:flex-start;font-size:13px;color:var(--cream-dim);}
+.airow .n{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);min-width:16px;}
+.airow b{color:var(--cream);font-weight:600;}
+.cursor{display:inline-block;width:7px;height:15px;background:var(--gold);vertical-align:-2px;margin-left:3px;animation:blink 1.1s steps(1) infinite;}
+@keyframes blink{50%{opacity:0}}
+.mocknote{margin-top:14px;font-size:11px;color:var(--muted-2);letter-spacing:.02em;line-height:1.6;}
 
-  /* isolation (Von Restorff) */
-  .isolate{ min-height:74vh; display:flex; flex-direction:column; justify-content:center; }
-  .isolate .word{ font-family:var(--font-display); font-weight:900; font-size:clamp(64px,26vw,150px); line-height:1; color:var(--accent); letter-spacing:-.04em; }
-  .isolate .cap{ font-family:var(--font-accent); font-style:italic; font-size:16px; color:var(--text-secondary); margin-top:28px; max-width:300px; }
+/* flow */
+.flow{display:flex;flex-direction:column;gap:0;position:relative;margin-top:8px;}
+.fstep{display:flex;gap:18px;align-items:flex-start;padding:4px 0;}
+.frail{display:flex;flex-direction:column;align-items:center;min-width:40px;}
+.fnode{width:40px;height:40px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,var(--ink-3),var(--brown-2));border:1px solid var(--line);}
+.fnode svg{width:19px;height:19px;stroke:var(--gold);fill:none;stroke-width:1.5;}
+.fconn{width:1px;flex:1;min-height:30px;background:linear-gradient(var(--line),var(--line-soft));margin:6px 0;}
+.fbody{padding-bottom:26px;flex:1;}
+.fbody .lb{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;}
+.fbody .ti{font-family:"Noto Serif KR";font-size:16.5px;color:var(--cream);margin-top:5px;}
+.fbody .de{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.65;}
+.fstep.last .fnode{background:linear-gradient(150deg,var(--gold-deep),#7a5d28);border-color:var(--gold);}
+.fstep.last .fnode svg{stroke:#16120b;}
 
-  /* capture bait (공유 미끼) */
-  .capture{ }
-  .capture .frame{
-    border-left:2px solid var(--accent); padding:8px 0 8px 22px; margin-top:8px;
-  }
-  .capture blockquote{ font-family:var(--font-display); font-weight:700; font-size:clamp(22px,6vw,28px); line-height:1.5; color:var(--text-primary); }
+/* data cards */
+.data{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.dcard{background:linear-gradient(160deg,var(--ink-3),var(--ink-2));border:1px solid var(--line-soft);border-radius:15px;padding:22px 18px;}
+.dcard.wide{grid-column:1 / -1;}
+.dnum{font-family:"Cormorant Garamond",serif;font-size:36px;font-weight:500;color:var(--gold-soft);line-height:1;letter-spacing:-.01em;}
+.dnum .u{font-size:17px;color:var(--gold);margin-left:3px;}
+.dlb{font-size:12.5px;color:var(--cream-dim);margin-top:11px;font-weight:500;}
+.dsrc{font-size:10.5px;color:var(--muted-2);margin-top:5px;letter-spacing:.01em;}
 
-  /* roadmap (세로) */
-  .road{ margin-top:18px; }
-  .road .ph{ padding:24px 0; border-bottom:1px solid var(--divider); }
-  .road .ph:last-child{ border-bottom:0; }
-  .road .pt{ font-family:var(--font-accent); font-style:italic; font-size:14px; color:var(--accent); letter-spacing:.04em; }
-  .road .ph h3{ font-family:var(--font-display); font-size:19px; font-weight:700; margin-top:6px; }
-  .road .ph ul{ margin-top:12px; }
-  .road .ph li{ list-style:none; padding-left:16px; position:relative; margin:6px 0; font-size:14.5px; color:var(--text-secondary); }
-  .road .ph li::before{ content:''; position:absolute; left:0; top:12px; width:7px; height:1px; background:var(--accent-soft); }
-  .road .res{ margin-top:12px; font-family:var(--font-accent); font-style:italic; font-size:14.5px; color:var(--text-primary); }
+/* two plans */
+.plan{display:flex;flex-direction:column;gap:16px;}
+.pbox{border-radius:16px;padding:24px 22px;border:1px solid var(--line-soft);background:linear-gradient(160deg,var(--ink-3),var(--ink-2));}
+.pbox.ext{border-color:var(--line);background:linear-gradient(160deg,#221b12,#181309);}
+.pbox .pk{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--muted);}
+.pbox.ext .pk{color:var(--gold);}
+.pbox .ph{font-family:"Noto Serif KR";font-size:18px;color:var(--cream);margin-top:8px;}
+.pbox ul{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:9px;}
+.pbox li{font-size:13.5px;color:var(--cream-dim);padding-left:20px;position:relative;line-height:1.6;}
+.pbox li::before{content:"";position:absolute;left:2px;top:9px;width:5px;height:5px;border-radius:50%;background:var(--gold-deep);}
+.pbox.ext li::before{background:var(--gold);}
+.chev{text-align:center;color:var(--gold-deep);font-size:18px;margin:-4px 0;}
 
-  /* pricing (PEAK · 세로) */
-  .price{ margin-top:24px; }
-  .price .p{ padding:26px 0; border-bottom:1px solid var(--divider); position:relative; }
-  .price .p:last-child{ border-bottom:0; }
-  .price .p.reco{ border-left:2px solid var(--accent); padding-left:22px; }
-  .price .pin-w{ font-family:var(--font-accent); font-style:italic; font-size:13px; color:var(--accent); }
-  .price .pl{ font-family:var(--font-accent); font-size:13px; letter-spacing:.04em; color:var(--text-muted); margin-top:4px; }
-  .price .pn{ font-family:var(--font-display); font-size:21px; font-weight:700; margin-top:6px; }
-  .price .pa{ font-family:var(--font-display); font-size:clamp(34px,11vw,46px); font-weight:900; margin-top:10px; letter-spacing:-.03em; }
-  .price .pa.big{ color:var(--accent); }
-  .price .pa small{ font-family:var(--font-body); font-size:14px; font-weight:400; color:var(--text-muted); letter-spacing:0; }
-  .price ul{ margin-top:14px; }
-  .price li{ list-style:none; padding-left:16px; position:relative; margin:6px 0; font-size:14.5px; color:var(--text-secondary); }
-  .price li::before{ content:''; position:absolute; left:0; top:12px; width:7px; height:1px; background:var(--accent-soft); }
-  .price .pos{ margin-top:12px; font-size:13px; color:var(--text-muted); }
+/* roadmap */
+.road{display:flex;flex-direction:column;}
+.rstep{display:flex;gap:16px;padding-bottom:8px;}
+.rrail{display:flex;flex-direction:column;align-items:center;min-width:64px;}
+.rtag{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:15px;color:var(--gold);padding-top:2px;white-space:nowrap;}
+.rdot{width:11px;height:11px;border-radius:50%;background:var(--ink);border:2px solid var(--gold-deep);margin-top:8px;}
+.rconn{width:2px;flex:1;min-height:34px;background:var(--line-soft);margin:4px 0;}
+.rbody{padding-bottom:28px;flex:1;}
+.rbody .rt{font-family:"Noto Serif KR";font-size:16px;color:var(--cream);}
+.rbody .rd{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.7;}
 
-  /* payment (세로) */
-  .pay{ margin-top:24px; }
-  .pay .opt{ padding:20px 0; border-bottom:1px solid var(--divider); }
-  .pay .opt:last-child{ border-bottom:0; }
-  .pay .ot{ font-family:var(--font-accent); font-style:italic; font-size:14px; color:var(--accent); }
-  .pay .ov{ font-family:var(--font-display); font-size:28px; font-weight:900; margin-top:6px; }
-  .pay .od{ font-size:13.5px; color:var(--text-secondary); margin-top:4px; }
-  .pay .save{ margin-top:22px; font-family:var(--font-display); font-size:20px; font-weight:700; color:var(--text-primary); line-height:1.5; }
-  .pay .save .a{ color:var(--accent); }
+/* scope shift before/after */
+.shift{display:flex;flex-direction:column;gap:12px;}
+.srow{display:grid;grid-template-columns:1fr;gap:12px;}
+.sbox{border-radius:14px;padding:20px;border:1px solid var(--line-soft);}
+.sbox.before{background:rgba(255,255,255,.015);}
+.sbox.after{background:linear-gradient(160deg,#221b12,#181309);border-color:var(--line);}
+.sbox .slb{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;}
+.before .slb{color:var(--muted);}
+.after .slb{color:var(--gold);}
+.sbox .sv{font-family:"Noto Serif KR";font-size:16px;color:var(--cream);margin:9px 0 4px;}
+.sbox .sd{font-size:13px;color:var(--muted);line-height:1.65;}
+.after .sv{color:var(--gold-soft);}
 
-  /* scope */
-  .scope{ margin-top:22px; }
-  .scope .blk{ padding:16px 0; border-bottom:1px solid var(--divider-soft); }
-  .scope .blk:last-child{ border-bottom:0; }
-  .scope .st{ font-family:var(--font-accent); font-style:italic; font-size:13px; color:var(--accent); }
-  .scope .blk p{ margin-top:6px; font-size:14px; }
-  .scope .blk.ex .st{ color:var(--text-muted); }
+/* pricing */
+.pricehead h2{font-size:25px;line-height:1.45;font-weight:400;}
+.pricehead h2 .b{color:var(--muted-2);font-weight:300;}
+.tiers{display:flex;flex-direction:column;gap:16px;margin-top:8px;}
+.tier{border-radius:18px;padding:26px 24px;border:1px solid var(--line-soft);background:linear-gradient(160deg,var(--ink-3),var(--ink-2));position:relative;}
+.tier.rec{border:1px solid var(--gold);background:linear-gradient(165deg,#241c11,#16110a);box-shadow:0 40px 80px -40px rgba(166,129,59,.4);}
+.tier .badge{position:absolute;top:-11px;left:24px;background:linear-gradient(90deg,var(--gold-deep),var(--gold));color:#15110a;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:5px 13px;border-radius:20px;}
+.tier .tg{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+.tier.rec .tg{color:var(--gold);}
+.tier .tn{font-family:"Noto Serif KR";font-size:19px;color:var(--cream);margin-top:9px;line-height:1.4;}
+.tier .price{margin-top:16px;display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;}
+.tier .price .amt{font-family:"Cormorant Garamond",serif;font-size:38px;font-weight:600;color:var(--cream);line-height:1;}
+.tier.rec .price .amt{color:var(--gold-soft);}
+.tier .price .vat{font-size:12.5px;color:var(--muted);}
+.tier .price .per{font-size:13px;color:var(--cream-dim);}
+.tier .pay{margin-top:10px;font-size:12.5px;color:var(--gold);background:rgba(201,168,97,.08);border:1px solid var(--line-soft);border-radius:10px;padding:9px 12px;display:inline-block;}
+.tier .desc{margin-top:14px;font-size:13.5px;color:var(--cream-dim);line-height:1.7;}
+.tier ul{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:8px;}
+.tier li{font-size:13px;color:var(--cream-dim);padding-left:20px;position:relative;line-height:1.55;}
+.tier li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:50%;background:var(--gold-deep);}
+.tier.rec li::before{background:var(--gold);}
+.tier li.inc{color:var(--muted);}
+.tier li.inc::before{background:var(--muted-2);}
 
-  /* faq */
-  .faq{ margin-top:22px; }
-  .faq details{ border-bottom:1px solid var(--divider); }
-  .faq summary{ list-style:none; cursor:pointer; padding:18px 30px 18px 0; position:relative; font-family:var(--font-display); font-size:16.5px; font-weight:700; color:var(--text-primary); line-height:1.5; }
-  .faq summary::-webkit-details-marker{ display:none; }
-  .faq summary::after{ content:'+'; position:absolute; right:2px; top:16px; font-size:20px; color:var(--accent); font-weight:300; transition:transform .2s; }
-  .faq details[open] summary::after{ transform:rotate(45deg); }
-  .faq .a{ padding:0 0 18px; font-size:14.5px; color:var(--text-secondary); line-height:1.7; }
+/* bonus */
+.bonus{border-radius:18px;border:1px solid var(--line);background:linear-gradient(160deg,#221b12,#141009);padding:28px 24px;text-align:left;}
+.bonus .bk{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;}
+.bonus .bh{font-family:"Noto Serif KR";font-size:21px;color:var(--cream);margin-top:12px;line-height:1.45;}
+.bonus .bd{font-size:13.5px;color:var(--cream-dim);margin-top:14px;line-height:1.75;}
 
-  /* contact (shortest) */
-  .contact{ padding:96px 0 84px; }
-  .contact h2{ font-size:clamp(26px,7.4vw,36px); }
-  .contact .lead{ color:var(--text-secondary); margin-top:18px; font-size:16px; }
-  .contact .pin{ font-family:var(--font-accent); font-style:italic; font-size:18px; color:var(--accent); margin-top:40px; }
-  .contact .note{ margin-top:14px; font-size:12.5px; color:var(--text-muted); }
+/* faq */
+.faq details{border-bottom:1px solid var(--line-soft);padding:4px 0;}
+.faq summary{list-style:none;cursor:pointer;padding:20px 0;font-family:"Noto Serif KR";font-size:16px;color:var(--cream);display:flex;justify-content:space-between;gap:16px;align-items:flex-start;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary .pl{color:var(--gold);font-size:20px;font-weight:300;transition:transform .35s var(--ease);flex:none;line-height:1.4;}
+.faq details[open] summary .pl{transform:rotate(45deg);}
+.faq .fa{font-size:13.5px;color:var(--cream-dim);line-height:1.8;padding:0 0 22px;font-weight:300;}
 
-  .foot{ padding:30px 0 40px; font-family:var(--font-accent); font-size:11px; letter-spacing:.08em; color:var(--text-muted); }
-  .foot .col{ }
+/* CTA */
+.cta{padding:110px 0 130px;text-align:left;}
+.cta h2{font-size:28px;font-weight:400;line-height:1.45;}
+.cta h2 .g{color:var(--gold-soft);}
+.cta .cd{margin-top:24px;font-size:15px;color:var(--cream-dim);font-weight:300;line-height:1.85;}
+.ctacard{margin-top:34px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(160deg,#1d1710,#120e08);padding:26px 24px;}
+.ctacard .ci{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;}
+.ctacard .cr{display:flex;gap:12px;align-items:center;padding:11px 0;font-size:14px;color:var(--cream-dim);}
+.ctacard .cr .k{color:var(--gold);font-family:"Cormorant Garamond";font-style:italic;font-size:17px;min-width:20px;}
+.ctabtn{margin-top:24px;width:100%;display:block;text-align:center;background:linear-gradient(90deg,var(--gold-deep),var(--gold));color:#16110a;font-family:"Pretendard";font-weight:700;font-size:15px;letter-spacing:.02em;padding:17px;border-radius:13px;text-decoration:none;border:none;}
 
-  /* sticky (Fitts · 엄지 구역 · 1경로) */
-  .sticky{ position:fixed; left:0; right:0; bottom:0; z-index:40; background:linear-gradient(180deg,rgba(14,12,10,0),rgba(14,12,10,.92) 38%); padding:18px 0 calc(16px + env(safe-area-inset-bottom)); }
-  .sticky .col{ margin-left:var(--gutter-left); }
-  .sticky a{
-    display:inline-flex; align-items:center; gap:10px; min-height:48px; padding:13px 26px;
-    background:var(--accent); color:var(--bg-base); border-radius:999px; font-weight:600; font-size:15px;
-  }
+footer{padding:40px 0 60px;text-align:center;border-top:1px solid var(--line-soft);}
+footer .fb{font-size:13px;letter-spacing:.42em;color:var(--gold);text-transform:uppercase;font-weight:600;}
+footer .fs{font-size:11.5px;color:var(--muted-2);margin-top:14px;line-height:1.8;}
+
+@media (min-width:600px){
+  :root{--maxw:600px;}
+  .hero h1{font-size:46px;}
+  h2{font-size:30px;}
+  .data{grid-template-columns:1fr 1fr;}
+  .srow{grid-template-columns:1fr 1fr;}
+}
 </style>
 </head>
 <body>
 
-<!-- ===== HERO (존1 · Hook · 미완결) ===== -->
+<!-- ===================== HERO ===================== -->
 <section class="hero">
-  <div class="col">
-    <span class="eyebrow">Weplace × 해윤제</span>
-    <h1 class="keep-all">황실에서 해윤제로.<br>간판은 바뀌었는데,</h1>
-    <div class="pin keep-all">그 자리를, 새 이름으로.</div>
-    <div class="cue">아래로 ↓</div>
+  <div class="wrap">
+    <div class="brandline r in">HAEYUNJE · 명인전통마사지</div>
+    <h1 class="r in d1">
+      <span class="b">황실에서,</span><br>
+      해윤제로.
+    </h1>
+    <p class="sub r in d2">
+      간판은 바뀌었습니다.<br>
+      위치도, 손길도, 후기 174건도 그대로 이어집니다.<br>
+      비어 있는 건 단 하나 — <span class="gold">새 이름이 검색에 자리 잡는 일.</span>
+    </p>
+    <div class="tag r in d3"><span class="dot"></span> 인수 · 상호변경 · 리뉴얼 오픈 전환 런칭 제안</div>
+    <div class="scrollcue r in d4"><span class="ln"></span> Scroll</div>
   </div>
 </section>
 
-<!-- ===== 보상 + 손실 (존2 · Zeigarnik 해소 · Loss aversion) ===== -->
-<section>
-  <div class="col">
-    <span class="label rv">Now</span>
-    <h2 class="rv rv-1 keep-all">검색은,<br>아직 황실입니다.</h2>
-    <p class="rv rv-2 keep-all">새 단장으로 곧 문을 엽니다. 하지만 지금 '해윤제'로 찾으면—</p>
-    <p class="loss rv rv-3 keep-all" style="margin-top:22px;">그 <span class="a">자리</span>가 비어 있습니다.</p>
-    <hr class="divider rv">
-    <p class="sm rv keep-all">위치도, 손길도, 후기 174건도 이어집니다. 비어 있는 건 단 하나, 새 이름이 검색에 자리 잡는 일.</p>
+<div class="hr"></div>
+
+<!-- ===================== WHY NOW (검색은 아직 황실) ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">Why now</div>
+    <h2 class="r d1">
+      <span class="b">간판은 바꿨는데,</span><br>
+      검색은 아직 황실입니다.
+    </h2>
+    <p class="note r d2">
+      고객이 새 이름 ‘해윤제’로 검색하면, 아직은 자리가 비어 있습니다.
+      반대로 옛 이름 ‘황실’로는 익숙한 정보가 그대로 뜹니다.
+      간판은 한 번 바꾸면 끝이지만, <span class="gold">검색 속 이름은 따로 세워야</span> 합니다.
+    </p>
+    <p class="note r d3" style="margin-top:18px;">
+      그래서 이번 작업은 ‘블로그 대행의 연장’이 아니라,
+      매장이 바뀌는 그 시점에만 할 수 있는 <span class="gold">온라인 전환 런칭</span>입니다.
+    </p>
   </div>
 </section>
 
-<!-- ===== 전환 사실 (존2) ===== -->
-<section class="tight">
-  <div class="col">
-    <span class="label rv">Transition</span>
-    <h2 class="rv rv-1 keep-all">한 번에,<br>다섯이 바뀝니다.</h2>
-    <div class="ba rv rv-2">
-      <div class="row"><div class="rl">Before</div><div class="rn keep-all">황실전통마사지 동탄점</div></div>
-      <div class="row"><div class="rl">After</div><div class="rn now keep-all">해윤제 명인전통마사지</div></div>
+<div class="hr"></div>
+
+<!-- ===================== 현재 전환 상황 ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">지금, 매장에서 벌어지는 일</div>
+    <h2 class="r d1">바뀌는 것과, 이어지는 것.</h2>
+    <p class="lead r d2" style="margin:20px 0 28px;">이번 전환에는 두 종류의 사실이 동시에 존재합니다.</p>
+
+    <div class="facts r d2">
+      <div class="fact"><div class="ix">01</div><div><div class="tt">신규 대표 인수</div><div class="ds">운영 주체가 새롭게 바뀌었습니다.</div></div></div>
+      <div class="fact"><div class="ix">02</div><div><div class="tt">사업자 전환</div><div class="ds">사업자등록이 새 대표 명의로 이전됩니다.</div></div></div>
+      <div class="fact"><div class="ix">03</div><div><div class="tt">상호 변경</div><div class="ds">황실 → 해윤제 명인전통마사지.</div></div></div>
+      <div class="fact"><div class="ix">04</div><div><div class="tt">인테리어 리빌딩</div><div class="ds">공간이 새 이름에 맞게 다시 정비됩니다.</div></div></div>
     </div>
-    <ul class="facts rv rv-3">
-      <li class="keep-all"><b>신규 대표 인수</b> <span>· 운영 주체가 바뀝니다.</span></li>
-      <li class="keep-all"><b>사업자 전환</b> <span>· 사업자 정보가 새로 등록됩니다.</span></li>
-      <li class="keep-all"><b>상호 변경</b> <span>· 검색·간판·안내에 '해윤제'가 반영됩니다.</span></li>
-      <li class="keep-all"><b>인테리어 리뉴얼</b> <span>· 공간이 새로 단장됩니다.</span></li>
-      <li class="keep-all"><b>이어받는 자산</b> <span>· 위치·후기 174는 잇고, 기준은 해윤제로.</span></li>
-    </ul>
-  </div>
-</section>
 
-<!-- ===== SCENE 입구 ===== -->
-<section class="scene" style="--scene:url('haeyunje-entrance.jpg');">
-  <div class="col">
-    <span class="label rv">Scene</span>
-    <h2 class="rv rv-1 keep-all">고객은 예약 전에,<br>이미 마음으로 한 번 들어와 봅니다.</h2>
-  </div>
-</section>
-
-<!-- ===== 분기 탭 (존2 · Identification Split) ===== -->
-<section>
-  <div class="col">
-    <span class="label rv">For You</span>
-    <h2 class="rv rv-1 keep-all">오픈 전, 가장<br>마음에 걸리는 건?</h2>
-    <p class="rv rv-2 keep-all">하나 골라 보세요. 새 이름을 본 고객도, 머릿속에서 같은 걸 먼저 확인합니다.</p>
-    <div class="tabs rv rv-3" role="tablist">
-      <button class="tab" role="tab" aria-selected="true" data-t="0">같은 곳인가</button>
-      <button class="tab" role="tab" aria-selected="false" data-t="1">믿어도 되나</button>
-      <button class="tab" role="tab" aria-selected="false" data-t="2">가격은</button>
-      <button class="tab" role="tab" aria-selected="false" data-t="3">예약은</button>
+    <p class="lead r d3" style="margin:28px 0 16px;">그리고 잃지 말아야 할, 이어받는 자산.</p>
+    <div class="facts r d3">
+      <div class="fact keep"><div class="ix">＋</div><div><div class="tt">같은 위치 · 같은 동선</div><div class="ds">고객이 이미 알고 찾아오던 그 자리.</div></div></div>
+      <div class="fact keep"><div class="ix">＋</div><div><div class="tt">쌓인 후기 174건</div><div class="ds">하루아침에 만들 수 없는 신뢰의 기록.</div></div></div>
     </div>
-    <div class="tab-body rv">
-      <div class="tab-panel on" data-p="0">
-        <div class="q keep-all">"여기, 그 자리 맞아?"</div>
-        <p class="keep-all">옛 이름으로 찾으면 나오고, 새 이름엔 비어 있습니다. 같은 자리에서 새 대표·새 기준으로 다시 열었다는 신호부터 심습니다.</p>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ===================== 고객이 헷갈리는 지점 ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">고객의 머릿속</div>
+    <h2 class="r d1">
+      이름이 바뀌면,<br>
+      고객은 다시 확인합니다.
+    </h2>
+    <p class="note r d2" style="margin-bottom:34px;">
+      예약 버튼을 누르기 전, 고객은 마음속으로 한 번 들어와 봅니다.
+      그때 떠오르는 질문은 거의 정해져 있습니다.
+    </p>
+    <div class="qcol r d2">
+      <div class="qline">“여기… 예전 그곳 맞나?”<span>같은 매장인지 확인하고 싶다</span></div>
+      <div class="qline">“지금 운영은 하고 있나?”<span>문 닫은 건 아닌지 불안하다</span></div>
+      <div class="qline">“대표가 바뀌었다는데 믿어도 되나?”<span>신뢰의 근거를 찾는다</span></div>
+      <div class="qline">“가격은 그대로일까?”<span>코스와 비용을 다시 본다</span></div>
+      <div class="qline">“예약은 어떻게 하지?”<span>다음 행동을 망설인다</span></div>
+    </div>
+    <p class="note r d3" style="margin-top:34px;">
+      좋은 제안서의 역할은 화려한 약속이 아니라,
+      <span class="gold">이 다섯 가지 불안을 줄여주는 화면</span>을 만들어 두는 일입니다.
+    </p>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ===================== AI 증거 파트 ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">고객은 이제, AI에게도 묻습니다</div>
+    <h2 class="r d1">
+      이미 AI는 동탄 마사지를<br>
+      추천하기 시작했습니다.
+    </h2>
+    <p class="note r d2" style="margin-bottom:28px;">
+      외국에 나가면 우리도 번역기와 지도를 켜고 식당을 찾습니다.
+      이제 30·40대 고객도 ‘동탄에서 마사지 잘하는 곳’을 AI에게 묻습니다.
+    </p>
+
+    <div class="aimock r d2">
+      <div class="aibar"><span class="dotr r1"></span><span class="dotr r2"></span><span class="dotr r3"></span><span class="ttl">AI 검색 화면</span></div>
+      <div class="uq"><div class="b">동탄에서 마사지 잘하는 곳 추천해줘</div></div>
+      <div class="ans">
+        <div class="avt"></div>
+        <div class="body">
+          <span class="h">동탄 지역</span>에서 후기와 위치, 영업 정보가 잘 정리된 곳을 정리해 드릴게요.
+          <div class="aireco">
+            <div class="airow"><span class="n">1</span><div><b>○○ 전통관리</b> · 구글 평점·리뷰·영업시간 정보 정리됨</div></div>
+            <div class="airow"><span class="n">2</span><div><b>△△ 바디케어</b> · 홈페이지·코스 안내 확인 가능</div></div>
+            <div class="airow"><span class="n">3</span><div><b>□□ 스포츠관리</b> · 위치·예약 동선 명확함</div></div>
+          </div>
+          <span style="display:block;margin-top:12px;">정확한 코스와 가격은 매장 정보를 함께 확인해 보세요<span class="cursor"></span></span>
+        </div>
       </div>
-      <div class="tab-panel" data-p="1">
-        <div class="q keep-all">"지금 운영하나, 믿어도 되나?"</div>
-        <p class="keep-all">영업 중이라는 최신 신호와 이어받은 후기 174건이, 해윤제 이름 아래에서도 살아 있게 잇습니다.</p>
-      </div>
-      <div class="tab-panel" data-p="2">
-        <div class="q keep-all">"가격은 어떻게 돼?"</div>
-        <p class="keep-all">코스·시간·금액이 한 화면에 정리돼 있어야 합니다. 흩어진 안내를 한 자리로 모읍니다.</p>
-      </div>
-      <div class="tab-panel" data-p="3">
-        <div class="q keep-all">"예약은 어디서 해?"</div>
-        <p class="keep-all">어느 채널에서 봐도 예약까지 한 줄로 이어지는 흐름을 설계합니다.</p>
-      </div>
+      <div class="mocknote">＊ 실제 AI 답변 화면을 단순화해 재현한 예시입니다. 캡처본을 보내주시면 이 자리에 그대로 넣을 수 있습니다.</div>
+    </div>
+
+    <div class="card r d3" style="margin-top:22px;">
+      <p class="lead" style="font-size:15.5px;">
+        문제는 <span class="gold">AI가 누구를 추천하느냐</span>가 아닙니다.
+        해윤제가 그 후보 안에 들어갈 <span class="gold">근거를 온라인에 갖고 있느냐</span>입니다.
+      </p>
+      <p class="small" style="margin-top:16px;">
+        AI는 감으로 고르지 않습니다. 구글 지도, 홈페이지, 리뷰, 영업시간, 카테고리,
+        설명문, 사진, 위치, 예약 동선처럼 <span class="gold">온라인에 정리된 신호</span>를 읽습니다.
+        그래서 이번 작업은 ‘노출을 사는 일’이 아니라, AI와 구글이 읽을 근거를 세우는 일입니다.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- ===== 출발점 → 흐름 (존3) ===== -->
-<section>
-  <div class="col">
-    <span class="label rv">Flow</span>
-    <h2 class="rv rv-1 keep-all">네이버·릴스는 출발점.<br>그 위에 자리를 잇습니다.</h2>
-    <p class="rv rv-2 keep-all">대표님이 원하신 네이버·릴스는 그대로. 위플레이스는 그 한 컷이 묻히지 않고 검색에 남도록, 뒤를 잇습니다.</p>
-    <div class="flow rv rv-3">
-      <div class="step"><span class="n">릴스</span><h3 class="keep-all">장면을 보여준다</h3><p class="keep-all">리뉴얼된 공간과 손길의 결.</p></div>
-      <div class="step"><span class="n">스레드</span><h3 class="keep-all">검색되는 문장을 남긴다</h3><p class="keep-all">영상 위의 결을 글로 옮겨 신호로.</p></div>
-      <div class="step"><span class="n">홈페이지</span><h3 class="keep-all">공식 기준점이 된다</h3><p class="keep-all">매장을 설명하는 단 하나의 자리.</p></div>
-      <div class="step"><span class="n">AI 검색</span><h3 class="keep-all">읽을 근거가 된다</h3><p class="keep-all">검색·AI가 해윤제를 이해하는 바탕.</p></div>
-    </div>
-    <hr class="divider rv">
-    <p class="sm rv keep-all">기존 계약(A안)은 네이버·블로그까지. 릴스부터 이 흐름 전체는 B안에서 시작됩니다.</p>
-  </div>
-</section>
+<div class="hr"></div>
 
-<!-- ===== 역할 분담 (패럴렐) ===== -->
-<section>
-  <div class="col">
-    <span class="label rv">Together</span>
-    <h2 class="rv rv-1 keep-all">대표님은 매장을,<br>위플레이스는 구조를.</h2>
-    <div class="roles rv rv-2">
-      <div class="role"><div class="rt">대표님 · 현장</div><h3 class="keep-all">현장감과 운영 철학</h3><ul><li>리뉴얼 과정 · 매장의 결</li><li>릴스에 담을 소재</li><li>관리 톤 · 운영 방향</li></ul></div>
-      <div class="role"><div class="rt">위플레이스 · 구조</div><h3 class="keep-all">설계와 검색 구조화</h3><ul><li>릴스 주제 설계 · 문구</li><li>스레드 전환 · 홈페이지 반영</li><li>네이버 · 구글 · AI 검색 정리</li></ul></div>
-      <div class="role"><div class="rt">함께 · 조율</div><h3 class="keep-all">매장의 공식 정보</h3><ul><li>코스명 · 가격표</li><li>예약 문구 · 동선</li><li>오픈 전후 발행 순서</li></ul></div>
-    </div>
-    <hr class="divider rv">
-    <p class="sm rv keep-all">대표님은 소재만. 시간이 드는 설계·문구·검색 반영은 이쪽이 가져갑니다.</p>
-  </div>
-</section>
+<!-- ===================== 검색 흐름 ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">고객의 동선</div>
+    <h2 class="r d1">
+      발견하고, 확인하고,<br>
+      비교한 뒤 예약합니다.
+    </h2>
+    <p class="note r d2" style="margin-bottom:36px;">
+      네이버는 발견의 출발점입니다. 다만 확신이 안 선 고객은 구글에서 다시 확인하고,
+      요즘은 AI에게 한 번 더 묻습니다. 해윤제는 그 모든 화면에서 <span class="gold">같은 매장</span>으로 보여야 합니다.
+    </p>
 
-<!-- ===== SCENE 데스크 ===== -->
-<section class="scene" style="--scene:url('haeyunje-desk.jpg');">
-  <div class="col">
-    <span class="label rv">Scene</span>
-    <h2 class="rv rv-1 keep-all">매장은 대표님이,<br>검색에 남는 자리는 이쪽이.</h2>
-  </div>
-</section>
-
-<!-- ===== ISOLATION (Von Restorff · 핀 신호) ===== -->
-<section class="isolate">
-  <div class="col">
-    <div class="word rv">자리</div>
-    <div class="cap rv rv-1 keep-all">매장의 자리, 사람 안의 자리, 그리고 검색 속 이름의 자리.</div>
-  </div>
-</section>
-
-<!-- ===== SCENE 복도 ===== -->
-<section class="scene" style="--scene:url('haeyunje-hallway.jpg');">
-  <div class="col">
-    <span class="label rv">Why now</span>
-    <h2 class="rv rv-1 keep-all">요즘 고객은,<br>검색을 한 번 더 확인합니다.</h2>
-  </div>
-</section>
-
-<!-- ===== 검색·AI (존3) ===== -->
-<section class="tight">
-  <div class="col">
-    <p class="tp rv keep-all" style="font-family:var(--font-display); font-size:19px; font-weight:700;">구글 지도를 보고, AI에게 "동탄 전통마사지 괜찮은 곳"을 묻습니다.</p>
-    <p class="rv rv-1 keep-all">이때 읽히는 건 광고가 아니라, 정리된 공식 정보입니다. 이번 작업은 결국 셋.</p>
-    <div class="flow rv rv-2" style="margin-top:20px;">
-      <div class="step"><span class="n">하나</span><h3 class="keep-all">검색 첫인상 정비</h3><p class="keep-all">새 이름으로 찾아도 깔끔하게.</p></div>
-      <div class="step"><span class="n">둘</span><h3 class="keep-all">공식 기준점 구축</h3><p class="keep-all">매장을 설명하는 단 하나의 자리.</p></div>
-      <div class="step"><span class="n">셋</span><h3 class="keep-all">읽기 좋은 정보 구조</h3><p class="keep-all">검색·AI가 인용할 수 있게.</p></div>
-    </div>
-    <p class="sm rv keep-all" style="margin-top:18px;">※ 즉시 고정 노출을 약속하진 않습니다. 다만 신호를 정렬해두면, 먼저 읽힐 근거가 남습니다. 늦을수록 따라잡는 값이 커집니다.</p>
-  </div>
-</section>
-
-<!-- ===== CAPTURE 미끼 (공유 한 줄) ===== -->
-<section class="tight">
-  <div class="col capture">
-    <span class="label rv">—</span>
-    <div class="frame rv rv-1">
-      <blockquote class="keep-all">간판은 한 번 바꾸면 끝이지만,<br>검색 속 이름은 새로 세워야 합니다.</blockquote>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 로드맵 ===== -->
-<section>
-  <div class="col">
-    <span class="label rv">90 Days</span>
-    <h2 class="rv rv-1 keep-all">오픈을 기준으로,<br>90일을 끊습니다.</h2>
-    <div class="road rv rv-2">
-      <div class="ph">
-        <div class="pt">D-14 → D-Day</div>
-        <h3 class="keep-all">오픈 전 정비</h3>
-        <ul><li>네이버 상호·정보·가격 정비</li><li>리뉴얼 사진 촬영·교체</li><li>구글 기준점 생성</li><li>이어받는 후기 연결 점검</li></ul>
-        <div class="res keep-all">오픈일에 새 이름으로 찾아도, 비어 있지 않다.</div>
+    <div class="flow r d2">
+      <div class="fstep">
+        <div class="frail"><div class="fnode"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div><div class="fconn"></div></div>
+        <div class="fbody"><div class="lb">Naver</div><div class="ti">네이버 — 발견</div><div class="de">처음 이름과 위치를 만나는 곳.</div></div>
       </div>
-      <div class="ph">
-        <div class="pt">D-Day → D+30</div>
-        <h3 class="keep-all">오픈 직후 신뢰 축적</h3>
-        <ul><li>리뉴얼 공간 릴스 발행</li><li>릴스 → 스레드 연결</li><li>홈페이지 1차 오픈</li><li>코스·컨디션 관리 안내 정리</li></ul>
-        <div class="res keep-all">"운영 중이고, 믿을 만하다"는 신호가 쌓인다.</div>
+      <div class="fstep">
+        <div class="frail"><div class="fnode"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5"/></svg></div><div class="fconn"></div></div>
+        <div class="fbody"><div class="lb">Reels · Insta</div><div class="ti">릴스 — 분위기 확인</div><div class="de">‘어떤 공간일까’를 눈으로 본다.</div></div>
       </div>
-      <div class="ph">
-        <div class="pt">D+30 → D+90</div>
-        <h3 class="keep-all">검색·예약 완성</h3>
-        <ul><li>FAQ·매장정보 구조화</li><li>구글·홈페이지·SNS 정렬</li><li>예약 동선 점검</li><li>첫 리포트 + 다음 흐름</li></ul>
-        <div class="res keep-all">해윤제가 검색에서, 하나의 정돈된 자리로 선다.</div>
+      <div class="fstep">
+        <div class="frail"><div class="fnode"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></div><div class="fconn"></div></div>
+        <div class="fbody"><div class="lb">Google Map</div><div class="ti">구글 지도 — 재확인</div><div class="de">위치·리뷰·영업시간을 다시 본다.</div></div>
+      </div>
+      <div class="fstep">
+        <div class="frail"><div class="fnode"><svg viewBox="0 0 24 24"><path d="M4 9l8-5 8 5v9a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M9 20v-6h6v6"/></svg></div><div class="fconn"></div></div>
+        <div class="fbody"><div class="lb">Homepage</div><div class="ti">홈페이지 — 공식 기준점</div><div class="de">모든 정보가 만나는 한 곳.</div></div>
+      </div>
+      <div class="fstep">
+        <div class="frail"><div class="fnode"><svg viewBox="0 0 24 24"><path d="M12 3l2 5 5 .5-3.8 3.4 1.2 5L12 19l-4.6 2.9 1.2-5L4.8 8.5 10 8z"/></svg></div><div class="fconn"></div></div>
+        <div class="fbody"><div class="lb">AI Search</div><div class="ti">AI 검색 — 추천 근거</div><div class="de">정리된 신호로 후보에 든다.</div></div>
+      </div>
+      <div class="fstep last">
+        <div class="frail"><div class="fnode"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-11"/></svg></div></div>
+        <div class="fbody"><div class="lb">Reserve</div><div class="ti">예약 — 전환</div><div class="de">불안이 사라진 자리에 예약이 남는다.</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== SCENE 텍스처 (피크 직전) ===== -->
-<section class="scene" style="--scene:url('haeyunje-texture.jpg');">
-  <div class="col">
-    <span class="label rv">Before pricing</span>
-    <h2 class="rv rv-1 keep-all">이건 광고비가 아니라,<br>자리를 세우는 첫 90일의 값입니다.</h2>
+<div class="hr"></div>
+
+<!-- ===================== 동탄 상권 데이터 ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">동탄이라는 무대</div>
+    <h2 class="r d1">
+      네이버 하나로 끝나는<br>
+      작은 동네가 아닙니다.
+    </h2>
+    <p class="note r d2" style="margin-bottom:30px;">
+      42만 명 규모의 생활권에서는, 고객의 확인 경로가 한 화면으로 끝나지 않습니다.
+      발견한 뒤 한 번 더 확인하고, <span class="gold">안심이 되는 곳</span>을 예약합니다.
+    </p>
+
+    <div class="data r d2">
+      <div class="dcard"><div class="dnum" data-to="428440">0</div><div class="dlb">동탄구 인구</div><div class="dsrc">생활권 전체 규모</div></div>
+      <div class="dcard"><div class="dnum" data-to="169264">0</div><div class="dlb">동탄구 세대수</div><div class="dsrc">실거주 가구 기준</div></div>
+      <div class="dcard"><div class="dnum" data-to="6330">0</div><div class="dlb">동탄구 외국인주민</div><div class="dsrc">화성시 전체 8.1% 생활권</div></div>
+      <div class="dcard"><div class="dnum" data-to="68.6" data-dec="1">0<span class="u">%</span></div><div class="dlb">ChatGPT 20~40대 비중</div><div class="dsrc">국내 앱 이용자 기준</div></div>
+      <div class="dcard wide"><div class="dnum" data-to="2031" data-suffix="만">0<span class="u">만 명</span></div><div class="dlb">ChatGPT 국내 앱 월간 사용자(MAU)</div><div class="dsrc">2025년 8월 기준 · 30·40대는 업무·정보검색 목적 활용 경향이 높음</div></div>
+    </div>
+
+    <p class="small r d3" style="margin-top:24px;">
+      핵심은 ‘외국인만 잡자’가 아닙니다. 동탄에도 외국인 생활권이 이미 자리 잡았고,
+      국내 고객까지 이제 구글과 AI를 <span class="gold">재확인 도구</span>로 씁니다. 검색 경로가 넓어진 만큼,
+      그 모든 화면을 한 매장으로 맞춰 두는 일이 필요해졌습니다.
+    </p>
   </div>
 </section>
 
-<!-- ===== 가격 (PEAK · 가장 강하게) ===== -->
-<section>
-  <div class="col">
-    <span class="label rv">Investment</span>
-    <h2 class="rv rv-1 keep-all">'인상'이 아니라,<br>일의 종류가 바뀌었습니다.</h2>
-    <p class="rv rv-2 keep-all">기존 300은 블로그 대행의 값. 이번은 인수·상호변경·리뉴얼을 검색에서 한자리로 세우는 값.</p>
-    <div class="price rv rv-3">
-      <div class="p">
-        <div class="pl">A · 기존 유지형</div>
-        <div class="pn keep-all">네이버 · 블로그 중심</div>
-        <div class="pa">300<small> 만 원 / 년 · VAT 별도</small></div>
-        <ul><li>네이버 플레이스 관리</li><li>블로그 포스팅 중심</li></ul>
-        <p class="pos keep-all">릴스·스레드·홈페이지·AI 미포함. 상호변경·리뉴얼을 알리기엔 좁다.</p>
+<div class="hr"></div>
+
+<!-- ===================== 선점할 자리 ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">아직 비어 있는 자리</div>
+    <h2 class="r d1">
+      이 흐름을 제대로 관리하는<br>
+      동탄 마사지샵은, 아직 많지 않습니다.
+    </h2>
+    <p class="note r d2">
+      네이버 → 구글 → 홈페이지 → AI → 예약. 이 전체 동선을 하나로 맞춰 둔 곳은 드뭅니다.
+      <span class="gold">해윤제는 리뉴얼 오픈과 동시에 그 자리를 먼저 잡을 수 있습니다.</span>
+    </p>
+    <p class="note r d3" style="margin-top:20px;">
+      대표님은 매장을 세우십니다.
+      위플레이스는 ‘해윤제’라는 이름이 검색에서 <span class="gold">비어 보이지 않게</span> 세우겠습니다.
+    </p>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ===================== 제안 구조 (기본안 / 확장안) ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">위플레이스 제안 구조</div>
+    <h2 class="r d1">기본은 인정하고, 그 위에 한 층을 더합니다.</h2>
+    <p class="note r d2" style="margin-bottom:30px;">
+      대표님이 말씀하신 네이버와 릴스는 옳은 출발점입니다. 위플레이스의 차별점은
+      그 흐름을 <span class="gold">스레드 · 홈페이지 · AI 검색까지 하나로 잇는</span> 데 있습니다.
+    </p>
+
+    <div class="plan r d2">
+      <div class="pbox">
+        <div class="pk">기본안 · 이미 인정된 축</div>
+        <div class="ph">네이버 · 릴스</div>
+        <ul>
+          <li>네이버 플레이스 상호·정보 정비 (발견의 출발점)</li>
+          <li>릴스로 새 공간의 분위기 전달</li>
+          <li>코스·가격·후기 노출 정리</li>
+        </ul>
       </div>
-      <div class="p reco">
-        <div class="pin-w">추천 · 한 안에 다 담긴다</div>
-        <div class="pl">B · 인수 런칭형</div>
-        <div class="pn keep-all">전환 전체를 한자리로</div>
-        <div class="pa big">600<small> 만 원 / 년 · VAT 별도</small></div>
-        <ul><li>A안 네이버 관리 전부</li><li>릴스 기획·발행 + 스레드 연결</li><li>구글 / AI 검색 정보 구조 정리</li><li>공식 기준점 홈페이지 + 예약 동선</li></ul>
-        <p class="pos keep-all">네이버·릴스가 처음으로 한 안에. 1년 통합 운영 시 홈페이지 제작 포함.</p>
+
+      <div class="chev">＋</div>
+
+      <div class="pbox ext">
+        <div class="pk">위플레이스 확장 · 차별점</div>
+        <div class="ph">스레드 → 홈페이지 → AI 검색</div>
+        <ul>
+          <li><b>스레드</b> — 짧은 글로 ‘운영 중·신뢰’ 신호를 꾸준히 남김</li>
+          <li><b>홈페이지</b> — 네이버·구글·SNS·AI가 함께 참고할 공식 기준점</li>
+          <li><b>AI 검색 대응</b> — AI가 읽기 좋은 매장 정보 구조로 정비</li>
+          <li><b>예약 동선</b> — 발견에서 예약까지 끊기지 않게 설계</li>
+        </ul>
       </div>
-      <div class="p">
-        <div class="pl">C · 대표 확장 브랜딩형</div>
-        <div class="pn keep-all">해윤제라는 이름까지</div>
-        <div class="pa">900<small> 만 원 / 년 · VAT 별도</small></div>
-        <ul><li>B안 전체 포함</li><li>대표님 경험을 신뢰의 결로</li><li>'해윤제' 명인 브랜드 자리 강화</li></ul>
-        <p class="pos keep-all">매장을 넘어, 이름 자체를 자산으로 키울 때.</p>
+    </div>
+
+    <p class="small r d3" style="margin-top:24px;">
+      쉽게 말하면 — 검색 첫인상을 정비하고, AI가 읽기 좋은 정보 구조를 만들고,
+      공식 기준점(홈페이지)을 세운 뒤, 예약 동선을 잇는 일입니다.
+    </p>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ===================== 90일 로드맵 ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">90일 로드맵</div>
+    <h2 class="r d1">오픈 전부터, 오픈 후 90일까지.</h2>
+    <p class="note r d2" style="margin-bottom:34px;">
+      한 번 세팅하고 끝나는 일이 아닙니다. 이름이 바뀌는 매장은
+      같은 기준으로 <span class="gold">계속 맞춰져야</span> 검색에서 흔들리지 않습니다.
+    </p>
+
+    <div class="road r d2">
+      <div class="rstep">
+        <div class="rrail"><div class="rtag">D-14</div><div class="rdot"></div><div class="rconn"></div></div>
+        <div class="rbody"><div class="rt">오픈 전 정비</div><div class="rd">네이버·구글 상호 변경, 기본 정보·카테고리 정리, 홈페이지 1차 구축, 후기 자산 연결 준비.</div></div>
+      </div>
+      <div class="rstep">
+        <div class="rrail"><div class="rtag">D-Day</div><div class="rdot"></div><div class="rconn"></div></div>
+        <div class="rbody"><div class="rt">리뉴얼 오픈</div><div class="rd">‘황실 → 해윤제’ 전환 메시지, 첫 릴스·스레드 게시, 예약 동선 점검.</div></div>
+      </div>
+      <div class="rstep">
+        <div class="rrail"><div class="rtag">D+30</div><div class="rdot"></div><div class="rconn"></div></div>
+        <div class="rbody"><div class="rt">신뢰 축적</div><div class="rd">코스·가격·FAQ 안정화, 리뷰 유도 문구 정리, 네이버·구글·SNS 정보 일치 확인.</div></div>
+      </div>
+      <div class="rstep">
+        <div class="rrail"><div class="rtag">D+90</div><div class="rdot"></div><div class="rconn"></div></div>
+        <div class="rbody"><div class="rt">검색·예약 완성</div><div class="rd">AI 검색 화면 점검, 동탄 키워드 정보 구조화, 전환 동선 정돈.</div></div>
+      </div>
+      <div class="rstep">
+        <div class="rrail"><div class="rtag">이후</div><div class="rdot" style="border-color:var(--gold);background:var(--gold)"></div></div>
+        <div class="rbody"><div class="rt">월간 유지 · 보완</div><div class="rd">정보 최신화, AI·구글 화면 점검, 간단 리포트로 같은 기준 유지.</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 결제 방식 ===== -->
-<section class="tight">
-  <div class="col">
-    <span class="label rv">Payment</span>
-    <h2 class="rv rv-1 keep-all">어떻게 내느냐로,<br>총값이 갈립니다.</h2>
-    <div class="pay rv rv-2">
-      <div class="opt">
-        <div class="ot">1년 통합 운영</div>
-        <div class="ov keep-all">600만 <small style="font-size:14px;font-weight:400;color:var(--text-muted)">+ VAT</small></div>
-        <div class="od keep-all">홈페이지 제작 — 서비스 포함</div>
+<div class="hr"></div>
+
+<!-- ===================== 가격: 일의 종류가 바뀌었다 ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">가격 이전에, 먼저 짚을 것</div>
+    <h2 class="r d1" style="font-weight:400;">
+      인상된 가격이 아니라,<br>
+      일의 종류가 바뀐 것입니다.
+    </h2>
+    <p class="note r d2" style="margin:20px 0 30px;">
+      기존은 ‘블로그 중심 관리’였습니다. 이번은 매장이 통째로 바뀌는 시점의
+      ‘인수 전환 런칭 관리’입니다. 다루는 화면도, 책임의 범위도 달라졌습니다.
+    </p>
+
+    <div class="shift r d2">
+      <div class="srow">
+        <div class="sbox before">
+          <div class="slb">기존 · 블로그 대행</div>
+          <div class="sv">연 300만 원 + VAT</div>
+          <div class="sd">블로그 중심 콘텐츠 운영. 한 채널 관리.</div>
+        </div>
+        <div class="sbox after">
+          <div class="slb">지금 · 인수 전환 런칭</div>
+          <div class="sv">범위가 달라짐</div>
+          <div class="sd">네이버 · 구글 · 홈페이지 · AI · SNS 정보 일치 + 월간 점검.</div>
+        </div>
       </div>
-      <div class="opt">
-        <div class="ot">분기별 결제</div>
-        <div class="ov keep-all">840만 <small style="font-size:14px;font-weight:400;color:var(--text-muted)">+ VAT</small></div>
-        <div class="od keep-all">운영 180 × 4 = 720, 홈페이지 120 별도 · 1년 환산</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 가격 카드 ===================== -->
+<section class="anchor" style="padding-top:20px;">
+  <div class="wrap pricehead">
+    <h2 class="r" style="margin-bottom:34px;">
+      <span class="b">광고비가 아니라,</span><br>
+      검색 후보군에 들어갈 근거를 세우는 비용입니다.
+    </h2>
+
+    <div class="tiers">
+      <!-- A -->
+      <div class="tier r d1">
+        <div class="tg">A · 최소 집중형</div>
+        <div class="tn">90일 인수 런칭 부스트</div>
+        <div class="price"><span class="amt">390</span><span class="per">만 원</span><span class="vat">+ VAT</span></div>
+        <div class="desc">일단 오픈 전후의 검색 공백부터 막는, 90일 집중 세팅안입니다.</div>
+        <ul>
+          <li>네이버 상호·정보 정비</li>
+          <li>구글 비즈니스 정비</li>
+          <li>AI 검색 화면 점검</li>
+          <li>원페이지 홈페이지 1차 구축</li>
+          <li>코스·가격·FAQ 정리</li>
+          <li>릴스·스레드 문구 설계</li>
+        </ul>
+      </div>
+
+      <!-- B 추천 -->
+      <div class="tier rec r d2">
+        <div class="badge">추천</div>
+        <div class="tg">B · 동탄 AI검색 선점 운영형</div>
+        <div class="tn">1년 전환 런칭 + 유지·보완</div>
+        <div class="price"><span class="amt">840</span><span class="per">만 원 / 1년</span><span class="vat">+ VAT</span></div>
+        <div class="pay">결제 부담 분리 → 초기 300만 원 + 월 60만 원 × 9개월</div>
+        <div class="desc">
+          첫 90일은 <b style="color:var(--gold-soft)">인수 런칭 세팅</b>,
+          이후 9개월은 해윤제라는 이름을 <b style="color:var(--gold-soft)">검색에서 유지·보완</b>하는 운영 기간입니다.
+        </div>
+        <ul>
+          <li class="inc">A안 전체 포함</li>
+          <li>구글 비즈니스 프로필 고도화</li>
+          <li>홈페이지 정보 업데이트</li>
+          <li>AI 검색 화면 월간 점검</li>
+          <li>네이버·구글·SNS 정보 일치 관리</li>
+          <li>리뷰 유도 문구 정리</li>
+          <li>검색 질문형 FAQ 추가</li>
+          <li>동탄 키워드 정보 구조화</li>
+          <li>월간 간단 리포트</li>
+        </ul>
+      </div>
+
+      <!-- C -->
+      <div class="tier r d3">
+        <div class="tg">C · 확장형</div>
+        <div class="tn">외국인 · 프리미엄 검색 대응형</div>
+        <div class="price"><span class="amt">1,080</span><span class="per">만 원 / 1년</span><span class="vat">+ VAT</span></div>
+        <div class="desc">외국인·프리미엄 고객까지 대비하는 확장안입니다.</div>
+        <ul>
+          <li class="inc">B안 전체 포함</li>
+          <li>영어 기본 페이지</li>
+          <li>English Google description</li>
+          <li>외국인용 FAQ · 영어 리뷰 요청 문구</li>
+          <li>Dongtan / sports / Korean traditional massage 키워드 구조</li>
+          <li>대표님 명인성·전통성 브랜딩 문구</li>
+        </ul>
       </div>
     </div>
-    <p class="save rv rv-3 keep-all">통합 운영이 <span class="a">240만 원 + VAT</span>를 덜고,<br>홈페이지까지 안고 갑니다.</p>
+
+    <p class="small r" style="margin-top:24px;text-align:left;">
+      ＊ 분기 결제를 원하실 경우, <span class="gold">분기 운영비</span>와 <span class="gold">홈페이지 제작비</span>를 분리해 다시 안내드립니다.
+      AI 검색은 노출을 ‘보장’하는 광고가 아니라, AI·구글이 읽을 근거를 갖추는 기반 작업입니다.
+    </p>
   </div>
 </section>
 
-<!-- ===== 홈페이지 범위 ===== -->
-<section class="tight">
-  <div class="col">
-    <span class="label rv">Homepage</span>
-    <h2 class="rv rv-1 keep-all">홈페이지는,<br>이번 전환의 공식 자리.</h2>
-    <div class="scope rv rv-2">
-      <div class="blk"><div class="st">포함</div><p class="keep-all"><b style="color:var(--text-primary)">원페이지형 공식 소개 페이지</b> 기준. 매장 소개·코스/가격·위치·영업시간·FAQ·예약 동선이 한 자리에.</p></div>
-      <div class="blk ex"><div class="st">별도 협의</div><p class="keep-all">별도 촬영, 로고 개발, 다국어, 예약 시스템 개발, 복수 페이지 확장.</p></div>
+<div class="gap-s"></div>
+
+<!-- ===================== 1년 통결제 혜택 ===================== -->
+<section class="anchor" style="padding-top:0;">
+  <div class="wrap">
+    <div class="bonus r">
+      <div class="bk">1년 통결제 혜택</div>
+      <div class="bh">홈페이지 제작을, 별도 비용 없이.</div>
+      <div class="bd">
+        1년(B·C안) 계약 시 <span class="gold">공식 기준점이 될 홈페이지 제작을 포함</span>해 드립니다.
+        네이버 예약을 대체하려는 게 아니라, 네이버·구글·SNS·AI가 함께 참고할 ‘한 곳’을 갖추기 위해서입니다.
+        홈페이지가 있어야 AI와 구글이 해윤제를 같은 매장으로 읽습니다.
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== FAQ ===== -->
-<section>
-  <div class="col">
-    <span class="label rv">FAQ</span>
-    <h2 class="rv rv-1 keep-all">자주 물으실<br>다섯 가지.</h2>
-    <div class="faq rv rv-2">
-      <details><summary class="keep-all">네이버·릴스만 해도 되지 않나요?</summary><div class="a keep-all">출발점으론 맞습니다. 다만 릴스는 며칠 뒤 묻히고, 네이버 하나로는 구글·AI에서 빠질 수 있습니다. B안은 같은 소재를 자리로 잇는 데까지 갑니다.</div></details>
-      <details><summary class="keep-all">AI 검색 노출이 바로 보장되나요?</summary><div class="a keep-all">즉시 고정은 약속하지 않습니다. 광고가 아니니까요. 다만 신호를 정렬해두면 읽힐 근거가 쌓이고, 누적될수록 가능성이 오릅니다.</div></details>
-      <details><summary class="keep-all">릴스는 대표가 직접 해도 되나요?</summary><div class="a keep-all">현장 소재는 대표님이 제일 잘 담으십니다. 주제 설계·문구·스레드 전환·홈페이지 반영은 이쪽이. 찍어 주시면 나머지는 가져갑니다.</div></details>
-      <details><summary class="keep-all">분기 결제로 시작할 수 있나요?</summary><div class="a keep-all">가능합니다. 분기 180만 + VAT로 가볍게, 홈페이지 120만 + VAT는 별도. 다만 1년 환산 840만 + VAT — 통합(600만, 홈페이지 포함)보다 240만 더.</div></details>
-      <details><summary class="keep-all">홈페이지는 왜 필요한가요?</summary><div class="a keep-all">네이버 예약을 대체하려는 게 아닙니다. 검색·AI·SNS가 함께 볼 공식 자리가 한 곳 필요해서. 이름이 바뀌는 지금, 그 자리가 있으면 모든 채널이 같은 기준으로 섭니다.</div></details>
+<div class="hr"></div>
+
+<!-- ===================== FAQ ===================== -->
+<section class="anchor">
+  <div class="wrap">
+    <div class="kicker r">자주 묻는 질문</div>
+    <h2 class="r d1" style="margin-bottom:18px;">짚어 두면 좋을 것들.</h2>
+    <div class="faq r d2">
+      <details>
+        <summary>네이버와 릴스만 해도 되지 않나요?<span class="pl">＋</span></summary>
+        <div class="fa">네이버와 릴스는 옳은 출발점입니다. 다만 확신이 안 선 고객은 구글에서 다시 확인하고, AI에게 한 번 더 묻습니다. 그 화면들이 비어 있으면, 발견한 고객을 마지막 단계에서 놓칠 수 있습니다.</div>
+      </details>
+      <details>
+        <summary>AI 검색 노출이 바로 보장되나요?<span class="pl">＋</span></summary>
+        <div class="fa">보장하지 않습니다. 광고가 아니기 때문입니다. 대신 AI와 구글이 참고할 근거(정보·리뷰·홈페이지·영업정보)를 정리하면, 추천 후보에 들어갈 가능성을 높이는 기반이 생깁니다.</div>
+      </details>
+      <details>
+        <summary>구글은 외국인만 보는 것 아닌가요?<span class="pl">＋</span></summary>
+        <div class="fa">외국인에게 특히 중요합니다. 다만 이제 국내 고객도 구글 지도와 AI를 ‘재확인 도구’로 씁니다. 위치·리뷰·영업시간을 다시 확인하는 화면이 구글이기 때문입니다.</div>
+      </details>
+      <details>
+        <summary>홈페이지는 왜 필요한가요?<span class="pl">＋</span></summary>
+        <div class="fa">네이버 예약을 대체하려는 게 아닙니다. 네이버·구글·SNS·AI가 함께 참고할 공식 기준점이 필요해서입니다. 정보가 흩어져 있으면 AI가 같은 매장으로 읽기 어렵습니다.</div>
+      </details>
+      <details>
+        <summary>3개월만 먼저 시작할 수 있나요?<span class="pl">＋</span></summary>
+        <div class="fa">가능합니다(A안). 다만 해윤제는 인수·상호변경·리뉴얼 프로젝트라, 90일 세팅 후에도 정보 유지·보완이 필요합니다. 그래서 1년 운영형(B안)을 권합니다.</div>
+      </details>
+      <details>
+        <summary>1년 계약을 추천하는 이유는 무엇인가요?<span class="pl">＋</span></summary>
+        <div class="fa">첫 90일은 세팅, 이후 9개월은 검색 신호를 유지·보완하는 시간입니다. 이름이 바뀌는 매장은 한 번 세팅하고 끝내기보다, 같은 기준으로 계속 관리될 때 검색에서 흔들리지 않습니다.</div>
+      </details>
     </div>
   </div>
 </section>
 
-<!-- ===== CONTACT (Peak-End · 가장 짧게 · 잔여 문의) ===== -->
-<section class="contact" id="contact">
-  <div class="col">
-    <span class="label rv">Contact</span>
-    <h2 class="rv rv-1 keep-all">리뉴얼 오픈일,<br>한 줄만 주세요.</h2>
-    <p class="lead rv rv-2 keep-all">그 날짜에 맞춰 90일 순서부터 잡아 보내드립니다.</p>
-    <div class="pin rv rv-3 keep-all">그 자리를, 새 이름으로.</div>
-    <div class="note rv keep-all">담당자 / 연락처 / 카카오 채널 삽입 예정</div>
+<div class="hr"></div>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta">
+  <div class="wrap">
+    <div class="kicker r">시작은 한 줄이면 됩니다</div>
+    <h2 class="r d1">
+      리뉴얼 오픈일과 현재 매장명을<br>
+      <span class="g">한 줄로 알려주세요.</span>
+    </h2>
+    <p class="cd r d2">
+      해윤제가 네이버·구글·AI에서 어떻게 보이게 만들지,
+      첫 90일 순서로 정리해 드리겠습니다.
+    </p>
+
+    <div class="ctacard r d2">
+      <div class="ci">미팅 시 정리해 드릴 것</div>
+      <div class="cr"><span class="k">1</span> 오픈 전·후 90일 작업 순서표</div>
+      <div class="cr"><span class="k">2</span> 네이버·구글·AI 현재 화면 점검 리스트</div>
+      <div class="cr"><span class="k">3</span> 권장 가격안(A·B·C)과 결제 방식 안내</div>
+      <a class="ctabtn" href="#">오픈일·매장명 보내고 90일 플랜 받기</a>
+    </div>
   </div>
 </section>
 
-<footer class="foot"><div class="col">Weplace × Mashcore · 해윤제 명인전통마사지 · 2026</div></footer>
-
-<div class="sticky"><div class="col"><a href="#contact">오픈일 한 줄 보내기 →</a></div></div>
+<footer>
+  <div class="fb">WEPLACE</div>
+  <div class="fs">로컬 비즈니스 온라인 전환 런칭<br>대표님은 매장을, 위플레이스는 구조를.</div>
+</footer>
 
 <script>
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
-  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+/* scroll reveal */
+const io = new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12, rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll('.r:not(.in)').forEach(el=>io.observe(el));
 
-  const tabs=document.querySelectorAll('.tab');
-  const panels=document.querySelectorAll('.tab-panel');
-  tabs.forEach(t=>t.addEventListener('click',()=>{
-    tabs.forEach(x=>x.setAttribute('aria-selected','false'));
-    t.setAttribute('aria-selected','true');
-    const i=t.dataset.t;
-    panels.forEach(p=>p.classList.toggle('on', p.dataset.p===i));
-  }));
+/* count-up numbers */
+function fmt(n,dec){ return dec ? n.toFixed(dec) : Math.round(n).toLocaleString('en-US'); }
+const numObserver = new IntersectionObserver((es)=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el = e.target;
+    const to = parseFloat(el.dataset.to);
+    const dec = parseInt(el.dataset.dec||"0");
+    const suffix = el.dataset.suffix || "";
+    const unitHTML = el.querySelector('.u') ? el.querySelector('.u').outerHTML : "";
+    const dur = 1400; const t0 = performance.now();
+    function tick(now){
+      const p = Math.min((now-t0)/dur,1);
+      const eased = 1-Math.pow(1-p,3);
+      el.innerHTML = fmt(to*eased,dec) + unitHTML;
+      if(p<1) requestAnimationFrame(tick);
+      else el.innerHTML = fmt(to,dec) + unitHTML;
+    }
+    requestAnimationFrame(tick);
+    numObserver.unobserve(el);
+  });
+},{threshold:.6});
+document.querySelectorAll('.dnum[data-to]').forEach(el=>numObserver.observe(el));
 </script>
 </body>
 </html>
